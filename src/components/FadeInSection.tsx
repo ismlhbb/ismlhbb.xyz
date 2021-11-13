@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 interface FadeInSectionProps {
-  delay: string;
+  delay?: string;
   children: React.ReactNode;
 }
 
