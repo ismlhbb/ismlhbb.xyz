@@ -3,6 +3,7 @@ import { DefaultSeo } from 'next-seo';
 import { Provider } from 'react-redux';
 
 import 'styles/globals.scss';
+import 'styles/SidebarNav.scss';
 
 import { store } from 'app/store';
 import PageLoadingBar from 'components/PageLoadingBar';
