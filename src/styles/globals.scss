@@ -95,18 +95,19 @@ svg {
 }
 
 // #region-Layout
-.app {
-  background-color: var(--primary);
-}
-
 .layout {
   /* 750px */
   /* max-width: 43.75rem; */
 
   /* 1100px */
-  max-width: 68.75rem;
   @apply w-11/12 mx-auto;
+  max-width: 68.75rem;
 }
+
+// .content {
+/* @apply flex flex-row items-center min-h-screen w-full */
+// @apply flex flex-col items-center justify-center text-center min-h-screen;
+// }
 // end of #region-Layout
 
 .bg-dark a.custom-link {
@@ -122,7 +123,11 @@ svg {
 @layer utilities {
   .animated-underline {
     background-image: linear-gradient(#33333300, #33333300),
-      linear-gradient(to right, var(--primary), var(--primary-darker));
+      linear-gradient(
+        to right,
+        var(--secondary-lighter),
+        var(--secondary-lightest)
+      );
     background-size: 100% 2px, 0 2px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;

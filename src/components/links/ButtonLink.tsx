@@ -15,31 +15,30 @@ type ButtonLinkProps = {
 export default function ButtonLink({
   children,
   className = '',
-  variant = 'dark',
+  variant = 'primary',
   ...rest
 }: ButtonLinkProps) {
   return (
     <UnstyledLink
       {...rest}
       className={clsx(
-        'py-2 px-4 inline-block rounded font-bold animated-underline',
+        'py-2 px-4 inline-block rounded font-bold hover:text-primary-400 animated-underline',
         'border border-gray-600 shadow-sm',
-        'focus:outline-none',
+        'focus:outline-none focus-visible:text-primary-400',
         {
-          'bg-dark text-white hover:text-primary focus-visible:text-primary':
-            variant === 'dark',
+          'bg-dark text-white': variant === 'dark',
           'bg-white text-dark hover:bg-gray-200 hover:text-dark focus-visible:text-dark border-gray-400':
             variant === 'light',
-          'bg-primary text-white hover:bg-primary/90 hover:text-white border-primary-darker focus-visible:text-white':
+          'bg-primary-darker border-green-bright text-green-bright hover:bg-primary-lighter focus-visible:text-on-primary':
             variant === 'primary',
         },
         className
       )}
       style={
-        variant === 'primary'
+        variant === 'light'
           ? ({
-              '--primary': 'white',
-              '--primary-darker': 'white',
+              '--secondary-lighter': '#222',
+              '--secondary-lightest': '#222',
             } as React.CSSProperties)
           : undefined
       }

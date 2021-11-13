@@ -18,7 +18,7 @@ export default function Button({
   className,
   disabled: buttonDisabled,
   isLoading,
-  variant = 'dark',
+  variant = 'primary',
   ...rest
 }: ButtonProps) {
   const disabled = isLoading || buttonDisabled;
@@ -28,28 +28,28 @@ export default function Button({
       {...rest}
       disabled={disabled}
       className={clsx(
-        'py-2 px-4 rounded font-bold',
+        'py-2 px-4 rounded font-bold hover:text-primary-400',
         'border border-gray-600 shadow-sm',
-        'focus:outline-none',
+        'focus:outline-none focus-visible:text-primary-400',
         {
-          'bg-dark disabled:bg-gray-700 text-white hover:text-primary focus-visible:text-primary disabled:hover:text-white':
+          'bg-dark disabled:bg-gray-700 text-white disabled:hover:text-white':
             variant === 'dark',
           'bg-white disabled:bg-gray-200 text-dark hover:bg-gray-200 hover:text-dark focus-visible:text-dark border-gray-400 disabled:hover:text-dark':
             variant === 'light',
-          'bg-primary text-black hover:bg-primary/90 hover:text-black border-primary-darker disabled:hover:bg-primary disabled:brightness-75  focus-visible:text-dark':
+          'bg-primary-darker border-green-bright text-green-bright disabled:bg-primary-lighter hover:bg-primary-lighter disabled:brightness-75 focus-visible:text-on-primary':
             variant === 'primary',
         },
         'disabled:cursor-not-allowed',
         !disabled && 'animated-underline',
         isLoading &&
-          'relative text-transparent hover:!text-transparent !cursor-wait transition-none',
+          'relative !text-transparent hover:!text-transparent !cursor-wait transition-none',
         className
       )}
       style={
-        variant === 'primary'
+        variant === 'light'
           ? ({
-              '--primary': 'white',
-              '--primary-darker': 'white',
+              '--secondary-lighter': '#222',
+              '--secondary-lightest': '#222',
             } as React.CSSProperties)
           : undefined
       }
@@ -58,7 +58,7 @@ export default function Button({
         <div
           className={clsx(
             'absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2',
-            variant !== 'dark' ? 'text-black' : 'text-white'
+            variant !== 'primary' ? 'text-black' : 'text-white'
           )}
         >
           <ImSpinner2 className='animate-spin' />
