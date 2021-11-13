@@ -34,6 +34,7 @@ module.exports = {
         },
         'on-secondary': '#000000', // color on top of element with secondary color
         dark: '#222222',
+        'green-bright': `var(--green-bright)`,
       },
     },
   },
