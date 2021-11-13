@@ -38,8 +38,8 @@ export default function ButtonLink({
       style={
         variant === 'primary'
           ? ({
-              '--clr-primary': 'white',
-              '--clr-primary-darker': 'white',
+              '--primary': 'white',
+              '--primary-darker': 'white',
             } as React.CSSProperties)
           : undefined
       }

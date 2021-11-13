@@ -48,8 +48,8 @@ export default function Button({
       style={
         variant === 'primary'
           ? ({
-              '--clr-primary': 'white',
-              '--clr-primary-darker': 'white',
+              '--primary': 'white',
+              '--primary-darker': 'white',
             } as React.CSSProperties)
           : undefined
       }
