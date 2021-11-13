@@ -1,11 +1,7 @@
 import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
 
-import exampleReducer from 'components/example/example.reducer';
-
 export const store = configureStore({
-  reducer: {
-    example: exampleReducer,
-  },
+  reducer: {},
   devTools: process.env.NODE_ENV !== 'production',
 });
 
