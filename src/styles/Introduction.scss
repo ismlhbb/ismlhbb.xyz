@@ -1,0 +1,76 @@
+#intro {
+  @apply flex flex-col justify-center min-h-screen;
+}
+
+.Typist {
+  color: var(--secondary-lightest);
+  text-align: start;
+  font-size: 76px;
+  margin: 50px 0;
+  .Cursor--blinking {
+    color: var(--green-bright);
+    padding-left: 4px;
+  }
+}
+
+.intro-title {
+  font-size: 86px;
+}
+
+.intro-name {
+  @apply font-bold;
+  font-size: 86px;
+  color: var(--green-bright);
+}
+
+.intro-subtitle {
+  color: var(--secondary);
+  max-width: 70%;
+  margin-bottom: 20px;
+}
+
+.intro-desc {
+  color: var(--secondary);
+  max-width: 60%;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  #intro {
+    min-height: unset;
+    padding-left: unset;
+    margin: 0;
+    align-items: center;
+  }
+
+  .intro-title {
+    font-size: 46px;
+  }
+
+  .intro-name {
+    font-size: 46px;
+  }
+
+  .Typist {
+    font-size: 36px;
+  }
+
+  .intro-subtitle {
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .intro-desc {
+    font-size: 18px;
+    text-align: center;
+    max-width: unset;
+    padding-bottom: 40px;
+  }
+
+  .intro-contact {
+    font-size: 16px;
+    align-self: center;
+    margin-left: 30%;
+  }
+}
