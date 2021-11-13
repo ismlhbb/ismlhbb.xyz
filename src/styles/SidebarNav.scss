@@ -1,0 +1,43 @@
+.sidebar-nav {
+  @apply flex flex-col items-end fixed right-0 bg-transparent;
+  padding-right: 5%;
+  bottom: 10%;
+}
+
+.sidebar-items {
+  @apply hidden sm:block;
+}
+
+.sidebar-links {
+  @apply flex flex-col text-right text-base font-bold;
+  letter-spacing: 0em;
+  line-height: 1.6em;
+  padding: 0.2em;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: var(--green-bright);
+}
+
+.sidebar-link:hover {
+  color: var(--secondary-lightest);
+}
+
+.sidebar-socials {
+  @apply pt-10 w-20 flex flex-row justify-between pb-2;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar-nav {
+    @apply w-full items-center pr-0;
+    height: 50px;
+    position: unset;
+  }
+
+  .sidebar-socials {
+    @apply pt-1 flex flex-row justify-around;
+    width: 100px;
+    padding-left: unset;
+  }
+}
