@@ -22,14 +22,15 @@ export default function ButtonLink({
     <UnstyledLink
       {...rest}
       className={clsx(
-        'py-2 px-4 inline-block rounded font-bold hover:text-primary-400 animated-underline',
+        'py-2 px-4 inline-block rounded font-bold hover:text-primary-lightest animated-underline',
         'border border-gray-600 shadow-sm',
-        'focus:outline-none focus-visible:text-primary-400',
+        'focus:outline-none',
         {
-          'bg-dark text-white': variant === 'dark',
+          'bg-dark text-on-primary hover:text-on-primary focus-visible:text-on-primary':
+            variant === 'dark',
           'bg-white text-dark hover:bg-gray-200 hover:text-dark focus-visible:text-dark border-gray-400':
             variant === 'light',
-          'bg-primary-darker border-green-bright text-green-bright hover:bg-primary-lighter focus-visible:text-on-primary':
+          'bg-primary-darker border-green-bright text-green-bright hover:text-green-bright hover:bg-primary-lighter focus-visible:text-green-bright':
             variant === 'primary',
         },
         className

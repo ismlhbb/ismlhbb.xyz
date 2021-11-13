@@ -28,15 +28,15 @@ export default function Button({
       {...rest}
       disabled={disabled}
       className={clsx(
-        'py-2 px-4 rounded font-bold hover:text-primary-400',
+        'py-2 px-4 rounded font-bold hover:text-primary-lightest',
         'border border-gray-600 shadow-sm',
-        'focus:outline-none focus-visible:text-primary-400',
+        'focus:outline-none',
         {
-          'bg-dark disabled:bg-gray-700 text-white disabled:hover:text-white':
+          'bg-dark  text-on-primary hover:text-on-primary disabled:hover:text-on-primary disabled:bg-gray-700':
             variant === 'dark',
           'bg-white disabled:bg-gray-200 text-dark hover:bg-gray-200 hover:text-dark focus-visible:text-dark border-gray-400 disabled:hover:text-dark':
             variant === 'light',
-          'bg-primary-darker border-green-bright text-green-bright disabled:bg-primary-lighter hover:bg-primary-lighter disabled:brightness-75 focus-visible:text-on-primary':
+          'bg-primary-darker border-green-bright text-green-bright disabled:bg-primary-lighter hover:text-green-bright hover:bg-primary-lighter disabled:brightness-75 focus-visible:text-green-bright':
             variant === 'primary',
         },
         'disabled:cursor-not-allowed',
@@ -58,7 +58,7 @@ export default function Button({
         <div
           className={clsx(
             'absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2',
-            variant !== 'primary' ? 'text-black' : 'text-white'
+            variant !== 'primary' ? 'text-black' : 'text-on-primary'
           )}
         >
           <ImSpinner2 className='animate-spin' />
