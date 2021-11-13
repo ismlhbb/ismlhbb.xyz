@@ -34,7 +34,10 @@ const SidebarNav = () => {
         <div className='sidebar-links'>
           {links.map((link, i) => (
             <FadeInSection key={i} delay={`${i + 1}00ms`}>
-              <UnstyledLink className='sidebar-link' href={link.href}>
+              <UnstyledLink
+                className='sidebar-link animated-underline'
+                href={link.href}
+              >
                 {link.label}
               </UnstyledLink>
             </FadeInSection>
