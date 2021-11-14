@@ -4,7 +4,7 @@
 }
 
 .about-description {
-  @apply text-secondary max-w-2xl text-base sm:text-lg font-semibold mb-3;
+  @apply text-secondary max-w-2xl text-base sm:text-lg font-semibold mb-2;
 }
 
 .about-description a,
@@ -13,7 +13,7 @@
 }
 
 .about-description p {
-  @apply mb-3 text-base sm:text-lg;
+  @apply mb-2 text-base sm:text-lg;
 }
 
 .about-description ul {
