@@ -16,7 +16,7 @@
 }
 
 .sidebar-link {
-  @apply no-underline text-green-bright;
+  @apply no-underline text-green-bright cursor-pointer;
 }
 
 .sidebar-link:hover {
@@ -25,6 +25,10 @@
 
 .sidebar-socials {
   @apply pt-10 w-20 flex flex-row justify-between pb-2;
+}
+
+.sidebar-active {
+  @apply text-secondary-lightest;
 }
 
 @media only screen and (max-width: 640px) {

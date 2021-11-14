@@ -1,15 +1,15 @@
 import React from 'react';
 import { ImGithub, ImLinkedin } from 'react-icons/im';
 import { IoMdMail } from 'react-icons/io';
+import * as Scroll from 'react-scroll';
 
 import FadeInSection from 'components/FadeInSection';
-import UnstyledLink from 'components/links/UnstyledLink';
 
 const links = [
-  { href: '#', label: '/home' },
-  { href: '#about', label: '/about' },
-  { href: '#experience', label: '/experience' },
-  { href: '#projects', label: '/software-creations' },
+  { href: 'intro', label: '/home' },
+  { href: 'about', label: '/about' },
+  { href: 'experience', label: '/experience' },
+  { href: 'projects', label: '/software-creations' },
 ];
 
 const socials = [
@@ -34,21 +34,34 @@ const SidebarNav = () => {
         <div className='sidebar-links'>
           {links.map((link, i) => (
             <FadeInSection key={i} delay={`${i + 1}00ms`}>
-              <UnstyledLink
+              <Scroll.Link
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                to={link.href}
                 className='sidebar-link animated-underline'
-                href={link.href}
+                activeClass='sidebar-active'
               >
                 {link.label}
-              </UnstyledLink>
+              </Scroll.Link>
             </FadeInSection>
           ))}
         </div>
       </div>
       <div className='sidebar-socials'>
         {socials.map((social, i) => (
-          <UnstyledLink key={i} className='sidebar-link' href={social.href}>
+          <Scroll.Link
+            key={i}
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className='sidebar-link'
+            to={social.href}
+          >
             {social.item}
-          </UnstyledLink>
+          </Scroll.Link>
         ))}
       </div>
     </div>
