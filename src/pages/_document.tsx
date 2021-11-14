@@ -33,7 +33,7 @@ class MyDocument extends Document {
           <meta name='application-name' content={defaultMeta.title} />
           <meta name='format-detection' content='telephone=no' />
           <meta name='mobile-web-app-capable' content='yes' />
-          <meta name='theme-color' content='#EE424D' />
+          <meta name='theme-color' content='#0a192f' />
           <meta name='keyword' content={defaultMeta.keywords} />
           {/* Apple */}
           <meta name='apple-mobile-web-app-capable' content='yes' />
@@ -62,11 +62,6 @@ class MyDocument extends Document {
             type='image/png'
             sizes='16x16'
             href='/favicon/favicon-16x16.png'
-          />
-          <link
-            rel='mask-icon'
-            href='/favicon/safari-pinned-tab.svg'
-            color='#000000'
           />
           <link rel='shortcut icon' href='/favicon/favicon.ico' />
           <link rel='manifest' href='/favicon/manifest.json' />

@@ -5,14 +5,13 @@ import { ogImage } from 'utils/ogImage';
 export const defaultMeta = {
   title: process.env.NEXT_PUBLIC_APPLICATION_NAME,
   siteName: process.env.NEXT_PUBLIC_APPLICATION_NAME,
-  description:
-    'An opinionated Next.js project, added with TypeScript, TailwindCSS and Redux setup.',
+  description: 'Ismail Habibi Herman | Frontend Developer.',
   type: 'website',
   robots: 'follow, index',
   keywords:
-    'next, react, tailwindcss, redux, typescript, javascript, starter, template, boilerplate',
-  url: 'https://next-ts-tw-starter.vercel.app',
-  image: ogImage('next-ts-tw-starter'),
+    'ismail habibi, ismail habibi herman, ismailhabibi, ismlhbb, Ismail Habibi Herman, html, css, php, javascript, laravel, react, node, reactjs, react, typescipt, nextjs, next, redux, frontend, start up, startup',
+  url: 'https://ismlhbb.xyz',
+  image: ogImage('ismlhbb.xyz'),
 };
 
 export const defaultSEOConfig: DefaultSeoProps = {
@@ -29,7 +28,7 @@ export const defaultSEOConfig: DefaultSeoProps = {
     images: [
       {
         url: defaultMeta.image,
-        alt: 'ismlhbb/next-ts-tw-starter og-image',
+        alt: 'ismlhbb.xyz og-image',
       },
     ],
     site_name: defaultMeta.title,

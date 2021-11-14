@@ -3,7 +3,7 @@ import CustomLink from 'components/links/CustomLink';
 
 const Data = {
   profileName: 'Ismail Habibi Herman',
-  profileUrl: 'https://ismailhabibi.netlify.app',
+  profileUrl: 'https://ismlhbb.xyz',
 };
 
 const Footer = () => {
