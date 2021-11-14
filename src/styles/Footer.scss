@@ -1,0 +1,11 @@
+#footer {
+  @apply flex text-center justify-center items-center pt-28 pb-5;
+}
+
+.ending-footer {
+  @apply text-secondary items-center w-full text-base;
+}
+
+.footer-link {
+  @apply hover:text-green-bright;
+}
