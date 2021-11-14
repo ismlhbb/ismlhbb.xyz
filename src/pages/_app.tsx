@@ -7,6 +7,7 @@ import 'styles/SidebarNav.scss';
 import 'styles/Introduction.scss';
 import 'styles/About.scss';
 import 'styles/Experience.scss';
+import 'styles/Projects.scss';
 import 'react-typist/dist/Typist.css';
 
 import { store } from 'app/store';
