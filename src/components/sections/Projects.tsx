@@ -89,7 +89,7 @@ const Projects = () => {
       <div className='project-container'>
         <ul className='projects-grid'>
           {Object.values(ProjectList).map((project, i) => (
-            <FadeInSection delay={`${i + 1}00ms`}>
+            <FadeInSection key={i} delay={`${i + 1}00ms`}>
               <li className='projects-card'>
                 <div className='card-header'>
                   <MdFolderOpen className='text-4xl text-green-bright' />
