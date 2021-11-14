@@ -16,28 +16,25 @@
 }
 
 .sidebar-link {
-  text-decoration: none;
-  color: var(--green-bright);
+  @apply no-underline text-green-bright;
 }
 
 .sidebar-link:hover {
-  color: var(--secondary-lightest);
+  @apply text-secondary-lightest;
 }
 
 .sidebar-socials {
   @apply pt-10 w-20 flex flex-row justify-between pb-2;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   .sidebar-nav {
-    @apply w-full items-center pr-0;
-    height: 50px;
+    @apply w-full items-center pr-0 h-12;
     position: unset;
   }
 
   .sidebar-socials {
-    @apply pt-1 flex flex-row justify-around;
-    width: 100px;
+    @apply pt-1 flex flex-row justify-around w-24;
     padding-left: unset;
   }
 }
