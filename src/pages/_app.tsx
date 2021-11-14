@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import 'styles/globals.scss';
 import 'styles/SidebarNav.scss';
 import 'styles/Introduction.scss';
+import 'styles/About.scss';
 import 'react-typist/dist/Typist.css';
 
 import { store } from 'app/store';
