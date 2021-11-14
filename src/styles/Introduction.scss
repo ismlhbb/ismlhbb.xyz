@@ -3,71 +3,54 @@
 }
 
 .Typist {
-  color: var(--secondary-lightest);
-  text-align: start;
-  font-size: 76px;
-  margin: 50px 0;
+  @apply text-secondary-lightest text-left text-7xl my-4 mx-0;
   .Cursor--blinking {
-    color: var(--green-bright);
-    padding-left: 4px;
+    @apply text-green-bright;
   }
 }
 
 .intro-title {
-  font-size: 86px;
+  @apply text-7xl;
 }
 
 .intro-name {
-  @apply font-bold;
-  font-size: 86px;
-  color: var(--green-bright);
+  @apply font-bold text-7xl text-green-bright;
 }
 
 .intro-subtitle {
-  color: var(--secondary);
+  @apply text-secondary mb-5 text-3xl;
   max-width: 70%;
-  margin-bottom: 20px;
-  font-size: 28px;
 }
 
 .intro-desc {
-  color: var(--secondary);
+  @apply text-secondary mb-7;
   max-width: 60%;
-  margin-bottom: 30px;
 }
 
 .intro-cta {
   @apply flex items-center justify-center w-full mx-auto sm:justify-start;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   #intro {
+    @apply m-0 items-center;
     padding-left: unset;
-    align-items: center;
-    margin: 0;
   }
 
   .intro-title,
   .intro-name {
-    font-size: 46px;
+    @apply text-5xl;
   }
 
   .Typist {
-    font-size: 36px;
+    @apply text-4xl;
   }
 
   .intro-subtitle {
-    @apply mb-4 -mt-4;
-    text-align: center;
-    max-width: 100%;
-    font-size: 20px;
+    @apply mb-4 mt-2 text-xl max-w-full text-center;
   }
 
   .intro-desc {
-    @apply -mb-4;
-    font-size: 16px;
-    text-align: center;
-    max-width: 100%;
-    padding-bottom: 40px;
+    @apply mb-4 text-base text-center max-w-full;
   }
 }

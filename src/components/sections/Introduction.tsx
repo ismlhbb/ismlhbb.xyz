@@ -15,7 +15,7 @@ const IntroData = {
 const Introduction = () => {
   return (
     <div id='intro'>
-      <Typist avgTypingDelay={100}>
+      <Typist avgTypingDelay={120}>
         <span className='intro-title'>
           {'hi, '}
           <span className='intro-name'>{IntroData.name}</span>
