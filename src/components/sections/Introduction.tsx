@@ -1,4 +1,3 @@
-import { NextPage } from 'next';
 import * as React from 'react';
 import Typist from 'react-typist';
 
@@ -13,7 +12,7 @@ const IntroData = {
   ctaText: 'Know more',
 };
 
-const Introduction: NextPage = () => {
+const Introduction = () => {
   return (
     <div id='intro'>
       <Typist avgTypingDelay={100}>
@@ -24,11 +23,13 @@ const Introduction: NextPage = () => {
         </span>
       </Typist>
       <FadeInSection>
-        <h2 className='intro-subtitle'>{IntroData.subtitle}</h2>
+        <h5 className='intro-subtitle'>{IntroData.subtitle}</h5>
         <p className='intro-desc'>{IntroData.description}</p>
-        <ButtonLink href={IntroData.nextSection}>
-          {IntroData.ctaText}
-        </ButtonLink>
+        <div className='intro-cta'>
+          <ButtonLink href={IntroData.nextSection}>
+            {IntroData.ctaText}
+          </ButtonLink>
+        </div>
       </FadeInSection>
     </div>
   );

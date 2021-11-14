@@ -27,6 +27,7 @@
   color: var(--secondary);
   max-width: 70%;
   margin-bottom: 20px;
+  font-size: 28px;
 }
 
 .intro-desc {
@@ -35,18 +36,18 @@
   margin-bottom: 30px;
 }
 
+.intro-cta {
+  @apply flex items-center justify-center w-full mx-auto sm:justify-start;
+}
+
 @media only screen and (max-width: 600px) {
   #intro {
-    min-height: unset;
     padding-left: unset;
-    margin: 0;
     align-items: center;
+    margin: 0;
   }
 
-  .intro-title {
-    font-size: 46px;
-  }
-
+  .intro-title,
   .intro-name {
     font-size: 46px;
   }
@@ -56,21 +57,17 @@
   }
 
   .intro-subtitle {
-    margin: 0;
-    font-size: 28px;
+    @apply mb-4 -mt-4;
     text-align: center;
+    max-width: 100%;
+    font-size: 20px;
   }
 
   .intro-desc {
-    font-size: 18px;
-    text-align: center;
-    max-width: unset;
-    padding-bottom: 40px;
-  }
-
-  .intro-contact {
+    @apply -mb-4;
     font-size: 16px;
-    align-self: center;
-    margin-left: 30%;
+    text-align: center;
+    max-width: 100%;
+    padding-bottom: 40px;
   }
 }
