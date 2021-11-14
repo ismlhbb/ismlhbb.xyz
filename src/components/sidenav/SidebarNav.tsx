@@ -4,6 +4,7 @@ import { IoMdMail } from 'react-icons/io';
 import * as Scroll from 'react-scroll';
 
 import FadeInSection from 'components/FadeInSection';
+import UnstyledLink from 'components/links/UnstyledLink';
 
 const links = [
   { href: 'intro', label: '/home' },
@@ -51,17 +52,9 @@ const SidebarNav = () => {
       </div>
       <div className='sidebar-socials'>
         {socials.map((social, i) => (
-          <Scroll.Link
-            key={i}
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-            className='sidebar-link'
-            to={social.href}
-          >
+          <UnstyledLink key={i} className='sidebar-link' href={social.href}>
             {social.item}
-          </Scroll.Link>
+          </UnstyledLink>
         ))}
       </div>
     </div>
