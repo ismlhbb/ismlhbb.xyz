@@ -5,12 +5,12 @@ import { ogImage } from 'utils/ogImage';
 export const defaultMeta = {
   title: process.env.NEXT_PUBLIC_APPLICATION_NAME,
   siteName: process.env.NEXT_PUBLIC_APPLICATION_NAME,
-  description: 'Ismail Habibi Herman | Frontend Developer.',
+  description: `Ismail Habibi Herman's Portfolio.`,
   type: 'website',
   robots: 'follow, index',
   keywords:
-    'ismail habibi, ismail habibi herman, ismailhabibi, ismlhbb, Ismail Habibi Herman, html, css, php, javascript, laravel, react, node, reactjs, react, typescipt, nextjs, next, redux, frontend, start up, startup',
-  url: 'https://ismlhbb.xyz',
+    'ismail habibi, ismail habibi herman, ismailhabibi, ismlhbb, Ismail Habibi Herman, html, css, php, javascript, laravel, react, node, reactjs, react, typescipt, nextjs, next, redux, frontend, start up, startup, frontend developer, front end developer,',
+  url: process.env.NEXT_PUBLIC_APPLICATION_BASE_URL,
   image: ogImage('ismlhbb.xyz'),
 };
 
