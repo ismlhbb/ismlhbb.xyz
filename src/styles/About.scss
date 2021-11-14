@@ -1,10 +1,10 @@
 #about {
-  @apply flex flex-col justify-center min-h-screen;
+  @apply flex flex-col justify-start min-h-screen pt-10;
   padding-right: 15%;
 }
 
 .about-description {
-  @apply text-secondary max-w-2xl text-base sm:text-lg font-semibold mb-5;
+  @apply text-secondary max-w-2xl text-base sm:text-lg font-semibold mb-3;
 }
 
 .about-description a,
@@ -13,7 +13,7 @@
 }
 
 .about-description p {
-  @apply mb-4 text-base sm:text-lg;
+  @apply mb-3 text-base sm:text-lg;
 }
 
 .about-description ul {
