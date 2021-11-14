@@ -1,6 +1,6 @@
 {
-  "name": "next-ts-starter",
-  "description": "Next Typescript Starter",
+  "name": "ismlhbb-xyz",
+  "description": "Ismail Habibi Herman's Portfolio",
   "private": true,
   "author": "ismlhbb <ismail.habibi2104@gmail.com>",
   "license": "MIT",
@@ -18,9 +18,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
-    "@reduxjs/toolkit": "^1.6.2",
     "@tailwindcss/forms": "^0.3.4",
-    "axios": "^0.24.0",
     "clsx": "^1.1.1",
     "next": "12.0.2",
     "next-seo": "^4.28.1",
@@ -28,7 +26,6 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
-    "react-redux": "^7.2.6",
     "react-scroll": "^1.8.4",
     "react-typist": "^2.0.5",
     "sass": "^1.43.4"
@@ -39,7 +36,6 @@
     "@types/node": "16.11.6",
     "@types/nprogress": "^0.2.0",
     "@types/react": "17.0.33",
-    "@types/react-redux": "^7.1.20",
     "@types/react-typist": "^2.0.3",
     "@typescript-eslint/eslint-plugin": "^5.3.0",
     "@typescript-eslint/parser": "^5.3.0",
