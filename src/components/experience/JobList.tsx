@@ -6,46 +6,22 @@ import FadeInSection from 'components/FadeInSection';
 
 const JobList = () => {
   const experienceItems = {
-    Wattpad: {
-      jobTitle: 'Software Engineer (PEY) @',
-      duration: 'MAY 2020 - APR 2021',
+    Flick: {
+      jobTitle: 'Frontend Developer @',
+      duration: 'NOV 2020 - NOV 2021',
       desc: [
-        'Developed a responsive React web page (the new Story Details) from scratch, both on client and server side, for an app with massive scale (2 billion daily requests).',
-        'Iteratively built web experiences for 80 million users across high-traffic pages.',
-        'Measured and analyzed real-world user metrics by leveraging Amplitude and Datadog.',
-        'Collaborated with senior engineers and product management following best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations.',
+        'Developed web-based applications for the company, users and merchants',
+        'Developed BeePay Back Office for Financial Institution and Admin using React, TypeScript, Redux, Material UI, Scss',
+        'Developed BeePay Shop using React, TypeScript, Redux, Material UI, Scss',
+        'Developed FlickSilvi Web v1 using React, Typescript, Redux, Material UI, Scss',
+        'Developed Silvi Merchant Back Office v1.1+ using React, TypeScript, MobX, Material UI, Scss',
       ],
     },
-    UofT: {
-      jobTitle: 'Research Engineer @',
-      duration: 'MAY 2021 - SEPT 2021',
+    'Kementerian PUPR': {
+      jobTitle: 'Web Application Developer Intern @',
+      duration: 'JUL 2019 - AUG 2019',
       desc: [
-        'Developing and researching an NLP-based framework using state-of-the-art tools like Spacy and Stanza to facilitate the derivation of requirements from health data by leveraging syntactic dependencies, entity-recognition and rule-based match-making.',
-        ' Application selected for DCS Research Award ($4,000) as part of the ”Visualizing Privacy Analysis Results” project led by Professor Marsha Chechik.',
-      ],
-    },
-    Centivizer: {
-      jobTitle: 'Research Developer @',
-      duration: 'SEPT 2019 - APR 2020',
-      desc: [
-        'Researched and developed interactive and neural-activation technologies to stimulate physical and cognitive functions in order to slow the progression of neurodegenerative disorders.',
-        'Leveraged WebRTC to develop and maintain a Node.js online video-streaming platform in real-time competitive-mode games to research the effects of active stimulation for those suffering from dementia.',
-      ],
-    },
-    TDSB: {
-      jobTitle: 'Software Engineer @',
-      duration: 'SEPT 2019 - DEC 2020',
-      desc: [
-        'Co-developed homework management software integrable with Google Classroom by utilizing the Python’s Flask micro-framework for the back-end API and Vue.js for the front-end UI, in order to translate business requirements into a functional full-stack application.',
-      ],
-    },
-    'Orange Gate': {
-      jobTitle: 'Software Engineering Intern @',
-      duration: 'MAY 2019 - AUG 2019',
-      desc: [
-        'Developed a Node.js smart home system through Facebook’s Messenger integrated with Bocco sen- sors and other smart devices (Nest camera, TPLink smart plugs) to derive conclusions about the current state of the home',
-        'Identified continuous improvements in data quality, design reports and coding activities, presenting results and findings to internal business stakeholders.',
-        'Relevant technologies/tools used: DialogFlow, Vision, AutoML, Messenger Bot API, MongoDB.',
+        'Design and build a web-based letter submission and approval system for managing letter drafts using PHP, MySql, including a custom UI with Bootstrap and CSS',
       ],
     },
   };
