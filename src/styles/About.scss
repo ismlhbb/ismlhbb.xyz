@@ -64,6 +64,10 @@
     padding-right: unset;
   }
 
+  .about-description ul {
+    grid-template-columns: repeat(2, minmax(150px, 10px));
+  }
+
   .about-image img {
     display: none;
   }
