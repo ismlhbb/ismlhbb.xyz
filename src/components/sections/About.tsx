@@ -3,6 +3,7 @@ import * as React from 'react';
 
 import FadeInSection from 'components/FadeInSection';
 import ButtonLink from 'components/links/ButtonLink';
+import { aboutCTA, aboutTechStack } from 'constants/data';
 
 const DescItems = [
   {
@@ -35,25 +36,6 @@ const DescItems = [
   },
 ];
 
-const TechStack = [
-  'JavaScript',
-  'TypeScript',
-  'React.js',
-  'Next.js',
-  'Redux',
-  'MobX',
-  'HTML & CSS',
-  'Scss',
-  'Jss',
-  'Tailwind',
-  'Material UI',
-];
-
-const CTA = {
-  text: 'View Resume',
-  url: 'https://drive.google.com/file/d/1ooEBNxoygxCCQsh75g_MovNCg4d_Nnth/view',
-};
-
 const About = () => {
   return (
     <div id='about'>
@@ -68,7 +50,7 @@ const About = () => {
             ))}
             {'Here are some technologies I have been working with:'}
             <ul className='tech-stack'>
-              {TechStack.map(function (tech_item, i) {
+              {aboutTechStack.map(function (tech_item, i) {
                 return (
                   <FadeInSection key={i} delay={`${i + 1}00ms`}>
                     <li>{tech_item}</li>
@@ -81,7 +63,7 @@ const About = () => {
             <img src='/images/me.jpg' alt='Me' />
           </div>
         </div>
-        <ButtonLink href={CTA.url}>{CTA.text}</ButtonLink>
+        <ButtonLink href={aboutCTA.url}>{aboutCTA.text}</ButtonLink>
       </FadeInSection>
     </div>
   );

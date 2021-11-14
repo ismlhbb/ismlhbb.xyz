@@ -1,0 +1,29 @@
+/* Layout */
+.layout {
+  /* 1100px */
+  @apply w-11/12 mx-auto;
+  max-width: 68.75rem;
+}
+
+.bg-dark a.custom-link {
+  @apply border-gray-200 hover:border-gray-200/0;
+}
+
+/* Class to adjust with sticky footer */
+.min-h-main {
+  min-height: calc(100vh - 56px);
+}
+
+/* Sections */
+.section-header {
+  @apply flex items-center justify-start gap-1 pb-10;
+}
+
+.section-header::after {
+  @apply w-52 md:w-72 ml-5 h-0.5 bg-primary-lightest hidden sm:block;
+  content: '';
+}
+
+.section-title {
+  @apply text-3xl sm:text-5xl font-bold text-secondary-lightest;
+}
