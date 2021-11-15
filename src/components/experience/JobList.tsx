@@ -24,7 +24,7 @@ const JobList = () => {
                 )
               }
             >
-              {deviceState.isMobile ? `0${i}.` : company}
+              {deviceState.isMobile ? `0${i + 1}.` : company}
             </Tab>
           ))}
         </Tab.List>
