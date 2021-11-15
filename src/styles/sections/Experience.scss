@@ -2,11 +2,11 @@
   @apply flex flex-col justify-start min-h-screen pt-10;
 }
 .joblist-container {
-  @apply flex flex-grow;
+  @apply flex flex-col sm:flex-row flex-grow;
 }
 
 .joblist-tablist {
-  @apply flex flex-col p-1 mr-10 space-y-2 w-44;
+  @apply overflow-x-auto flex flex-row sm:flex-col p-1 mr-10 space-y-2 w-full sm:w-44;
 }
 
 .joblist-tab {
@@ -14,7 +14,7 @@
 }
 
 .joblist-tab-selected {
-  @apply shadow border-r-2 border-green-bright;
+  @apply shadow border-b-2 sm:border-b-0 sm:border-r-2 border-green-bright;
 }
 
 .joblist-tab-not-selected {
