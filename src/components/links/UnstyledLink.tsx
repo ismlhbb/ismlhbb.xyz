@@ -33,7 +33,7 @@ export default function UnstyledLink({
           offset={0}
           duration={500}
           to={href}
-          className={className}
+          className={clsx(className, 'cursor-pointer')}
           activeClass={activeClass}
         >
           {children}
