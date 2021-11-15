@@ -27,7 +27,7 @@ const Projects = () => {
                     )}
                     {project.open && (
                       <UnstyledLink href={project.open}>
-                        <MdOpenInBrowser className='ml-4 text-2xl hover:text-green-bright text-secondary-lightest' />
+                        <MdOpenInBrowser className='text-2xl hover:text-green-bright text-secondary-lightest' />
                       </UnstyledLink>
                     )}
                   </span>
