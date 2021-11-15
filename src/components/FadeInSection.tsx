@@ -14,6 +14,9 @@ const FadeInSection = ({ delay, children }: FadeInSectionProps) => {
       entries.forEach((entry) => setVisible(entry.isIntersecting));
     });
     observer.observe(domRef.current);
+    return () => {
+      setVisible(false);
+    };
   }, []);
 
   return (
