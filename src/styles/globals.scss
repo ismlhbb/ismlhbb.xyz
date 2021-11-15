@@ -74,6 +74,10 @@ svg {
   @apply font-primary;
 }
 
+::selection {
+  @apply bg-primary-lightest; /* WebKit/Blink Browsers */
+}
+
 ::-webkit-scrollbar {
   @apply h-0 w-0 md:h-1.5 w-1.5;
 }
