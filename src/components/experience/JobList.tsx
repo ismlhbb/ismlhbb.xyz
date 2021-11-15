@@ -16,7 +16,9 @@ const JobList = () => {
               className={({ selected }) =>
                 clsx(
                   'joblist-tab',
-                  selected ? 'joblist-tab-selected' : 'joblist-tab-not-selected'
+                  selected
+                    ? 'joblist-tab-selected'
+                    : 'joblist-tab-not-selected animated-underline'
                 )
               }
             >
@@ -24,11 +26,11 @@ const JobList = () => {
             </Tab>
           ))}
         </Tab.List>
-        <Tab.Panels>
+        <Tab.Panels className='joblist-content'>
           {Object.values(experienceItems).map((experience, i) => (
             <Tab.Panel key={i}>
               <span className='joblist-job-title'>
-                {experience.jobTitle + ' '}
+                {experience.jobTitle + ' @ '}
               </span>
               <span className='joblist-job-company'>
                 {Object.keys(experienceItems)[i]}

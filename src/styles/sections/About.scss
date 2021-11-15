@@ -4,7 +4,7 @@
 }
 
 .about-description {
-  @apply text-secondary max-w-2xl text-base sm:text-lg font-semibold mb-2;
+  @apply text-secondary max-w-2xl text-base sm:text-lg font-semibold mb-3;
 }
 
 .about-description a,
@@ -13,13 +13,13 @@
 }
 
 .about-description p {
-  @apply mb-2 text-base sm:text-lg;
+  @apply mb-3 text-base sm:text-lg;
 }
 
 .about-description ul {
   @apply pt-4 grid;
   list-style-type: none;
-  grid-template-columns: repeat(3, minmax(150px, 10px));
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
 }
 
 .about-description li {
@@ -65,7 +65,7 @@
   }
 
   .about-description ul {
-    grid-template-columns: repeat(2, minmax(150px, 10px));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 
   .about-image img {

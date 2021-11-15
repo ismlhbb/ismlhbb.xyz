@@ -1,36 +1,41 @@
 #experience {
   @apply flex flex-col justify-start min-h-screen pt-10;
 }
+
 .joblist-container {
-  @apply flex flex-col sm:flex-row flex-grow;
+  @apply flex flex-grow flex-col md:flex-row;
 }
 
 .joblist-tablist {
-  @apply overflow-x-auto flex flex-row sm:flex-col p-1 mr-10 space-y-2 w-full sm:w-44;
+  @apply w-full overflow-x-auto flex flex-row md:flex-col md:mr-10 md:space-y-2 md:w-1/4;
 }
 
 .joblist-tab {
-  @apply w-full p-2.5 text-base text-left leading-5 font-semibold text-green-bright;
+  @apply w-full p-4 text-base font-semibold text-green-bright text-center md:text-left;
 }
 
 .joblist-tab-selected {
-  @apply shadow border-b-2 sm:border-b-0 sm:border-r-2 border-green-bright;
+  @apply border-b-2 border-green-bright md:border-b-0 md:border-r-2;
 }
 
 .joblist-tab-not-selected {
   @apply text-secondary hover:bg-primary-lightest hover:text-green-bright;
 }
 
+.joblist-content {
+  @apply mt-5 md:mt-0 md:w-full;
+}
+
 .joblist-job-title {
-  @apply text-3xl font-bold text-secondary-lightest;
+  @apply text-lg md:text-3xl font-bold text-secondary-lightest;
 }
 
 .joblist-job-company {
-  @apply text-3xl font-bold text-green-bright;
+  @apply text-lg md:text-3xl font-bold text-green-bright;
 }
 
 .joblist-duration {
-  @apply text-lg text-secondary;
+  @apply text-base md:text-lg text-secondary;
 }
 
 .job-description li::before {
@@ -39,16 +44,16 @@
 }
 
 .job-description li {
-  @apply relative pl-8 pb-4 text-lg text-secondary;
+  @apply relative px-8 pb-4 text-secondary;
 }
 
 .job-description {
-  @apply pt-6 max-w-2xl text-xl;
+  @apply pt-6 max-w-2xl text-base md:text-lg;
 }
 
 .job-description a,
 .job-description b {
-  @apply text-lg font-bold;
+  @apply text-base md:text-lg font-bold;
 }
 
 @media only screen and (max-width: 640px) {
@@ -56,10 +61,5 @@
     padding-left: unset;
     padding-right: unset;
     padding-top: 30%;
-  }
-
-  .joblist-job-title,
-  .joblist-job-company {
-    font-size: 22px;
   }
 }
