@@ -1,8 +1,8 @@
 // Intro
 export const introData = {
   name: 'ismail',
-  subtitle: `I build beautiful, fast and responsive web applications to make people's lives easier.`,
-  description: `Experienced Front End Developer with strong knowledge creating high-quality, scalable, predictable, and high-performance web applications.`,
+  subtitle: `I build beautiful, fast and responsive web applications to make people's live easier.`,
+  description: `I'm a lifelong learner and self-taught software engineer specializing in frontend development based in Jakarta, Indonesia.`,
   nextSection: 'about',
   ctaText: 'Know more',
 };
