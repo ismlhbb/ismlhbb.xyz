@@ -30,7 +30,7 @@ export const aboutCTA = {
 // Experience
 export const experienceItems = {
   Flick: {
-    jobTitle: 'Frontend Developer @',
+    jobTitle: 'Frontend Developer',
     duration: 'NOV 2020 - NOV 2021',
     desc: [
       'Developed web-based applications for the company, users and merchants',
@@ -41,7 +41,7 @@ export const experienceItems = {
     ],
   },
   'Kementerian PUPR': {
-    jobTitle: 'Web Application Developer Intern @',
+    jobTitle: 'Web Application Developer Intern',
     duration: 'JUL 2019 - AUG 2019',
     desc: [
       'Design and build a web-based letter submission and approval system for managing letter drafts using PHP, MySql, including a custom UI with Bootstrap and CSS',
