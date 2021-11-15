@@ -19,7 +19,11 @@ const Introduction = () => {
         <h5 className='intro-subtitle'>{introData.subtitle}</h5>
         <p className='intro-desc'>{introData.description}</p>
         <div className='intro-cta'>
-          <ButtonLink href={introData.nextSection}>
+          <ButtonLink
+            openNewTab={false}
+            isScrollLink
+            href={introData.nextSection}
+          >
             {introData.ctaText}
           </ButtonLink>
         </div>

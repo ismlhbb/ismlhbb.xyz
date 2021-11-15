@@ -1,7 +1,10 @@
 import clsx from 'clsx';
 import Link, { LinkProps } from 'next/link';
+import * as Scroll from 'react-scroll';
 
 export type UnstyledLinkProps = {
+  activeClass?: string;
+  isScrollLink?: boolean;
   href: string;
   children: React.ReactNode;
   openNewTab?: boolean;
@@ -10,6 +13,8 @@ export type UnstyledLinkProps = {
   LinkProps;
 
 export default function UnstyledLink({
+  activeClass,
+  isScrollLink,
   children,
   href,
   openNewTab,
@@ -17,11 +22,24 @@ export default function UnstyledLink({
   ...rest
 }: UnstyledLinkProps) {
   const isNewTab =
-    openNewTab !== undefined
-      ? openNewTab
-      : href && !href.startsWith('/') && !href.startsWith('#');
+    openNewTab ?? (href && !href.startsWith('/') && !href.startsWith('#'));
 
   if (!isNewTab) {
+    if (isScrollLink) {
+      return (
+        <Scroll.Link
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          to={href}
+          className={className}
+          activeClass={activeClass}
+        >
+          {children}
+        </Scroll.Link>
+      );
+    }
     return (
       <Link href={href}>
         <a {...rest} className={className}>

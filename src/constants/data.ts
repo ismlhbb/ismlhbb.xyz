@@ -3,7 +3,7 @@ export const introData = {
   name: 'ismail',
   subtitle: `I build beautiful, fast and responsive web applications to make people's lives easier.`,
   description: `Experienced Front End Developer with strong knowledge creating high-quality, scalable, predictable, and high-performance web applications.`,
-  nextSection: '#about',
+  nextSection: 'about',
   ctaText: 'Know more',
 };
 

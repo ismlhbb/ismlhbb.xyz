@@ -1,7 +1,6 @@
 import React from 'react';
 import { ImGithub, ImLinkedin } from 'react-icons/im';
 import { IoMdMail } from 'react-icons/io';
-import * as Scroll from 'react-scroll';
 
 import FadeInSection from 'components/FadeInSection';
 import UnstyledLink from 'components/links/UnstyledLink';
@@ -35,17 +34,15 @@ const SidebarNav = () => {
         <div className='sidebar-links'>
           {links.map((link, i) => (
             <FadeInSection key={i} delay={`${i + 1}00ms`}>
-              <Scroll.Link
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-                to={link.href}
+              <UnstyledLink
+                openNewTab={false}
+                isScrollLink
+                href={link.href}
                 className='sidebar-link animated-underline'
                 activeClass='sidebar-active'
               >
                 {link.label}
-              </Scroll.Link>
+              </UnstyledLink>
             </FadeInSection>
           ))}
         </div>
