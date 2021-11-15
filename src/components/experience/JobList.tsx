@@ -2,15 +2,17 @@ import { Tab } from '@headlessui/react';
 import clsx from 'clsx';
 import * as React from 'react';
 
+import { useWindowSize } from 'app/hooks';
 import FadeInSection from 'components/FadeInSection';
 import { experienceItems } from 'constants/data';
 
 const JobList = () => {
+  const { deviceState } = useWindowSize();
   return (
     <div className='joblist-container'>
-      <Tab.Group vertical>
+      <Tab.Group vertical={deviceState.isDesktop}>
         <Tab.List className='joblist-tablist'>
-          {Object.keys(experienceItems).map((company) => (
+          {Object.keys(experienceItems).map((company, i) => (
             <Tab
               key={company}
               className={({ selected }) =>
@@ -22,7 +24,7 @@ const JobList = () => {
                 )
               }
             >
-              {company}
+              {deviceState.isMobile ? `0${i}.` : company}
             </Tab>
           ))}
         </Tab.List>
