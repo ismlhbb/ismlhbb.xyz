@@ -37,4 +37,38 @@ export const defaultSEOConfig: DefaultSeoProps = {
     handle: '@ismlhbb',
     cardType: 'summary_large_image',
   },
+  additionalMetaTags: [
+    {
+      name: 'image',
+      content: defaultMeta.image,
+    },
+    {
+      name: 'format-detection',
+      content: 'telephone=no',
+    },
+    {
+      name: 'mobile-web-app-capable',
+      content: 'yes',
+    },
+    {
+      name: 'theme-color',
+      content: '#0a192f',
+    },
+    {
+      name: 'keyword',
+      content: defaultMeta.keywords,
+    },
+    {
+      name: 'apple-mobile-web-app-capable',
+      content: 'yes',
+    },
+    {
+      name: 'apple-mobile-web-app-title',
+      content: defaultMeta.title,
+    },
+    {
+      name: 'apple-mobile-web-app-status-bar-style',
+      content: 'default',
+    },
+  ],
 };

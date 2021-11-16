@@ -30,18 +30,6 @@ class MyDocument extends Document {
     return (
       <Html lang='id' prefix='og: https://ogp.me/ns#'>
         <Head>
-          <meta name='application-name' content={defaultMeta.title} />
-          <meta name='format-detection' content='telephone=no' />
-          <meta name='mobile-web-app-capable' content='yes' />
-          <meta name='theme-color' content='#0a192f' />
-          <meta name='keyword' content={defaultMeta.keywords} />
-          {/* Apple */}
-          <meta name='apple-mobile-web-app-capable' content='yes' />
-          <meta name='apple-mobile-web-app-title' content={defaultMeta.title} />
-          <meta
-            name='apple-mobile-web-app-status-bar-style'
-            content='default'
-          />
           {/* ItemProp */}
           <meta itemProp='name' content={defaultMeta.title} />
           <meta itemProp='description' content={defaultMeta.description} />
