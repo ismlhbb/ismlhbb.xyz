@@ -39,10 +39,6 @@ export const defaultSEOConfig: DefaultSeoProps = {
   },
   additionalMetaTags: [
     {
-      name: 'image',
-      content: defaultMeta.image,
-    },
-    {
       name: 'format-detection',
       content: 'telephone=no',
     },

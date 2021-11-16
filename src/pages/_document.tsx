@@ -6,8 +6,6 @@ import Document, {
   NextScript,
 } from 'next/document';
 
-import { defaultMeta } from 'constants/next-seo';
-
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const originalRenderPage = ctx.renderPage;
@@ -28,12 +26,8 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang='id' prefix='og: https://ogp.me/ns#'>
-        <Head>
-          {/* ItemProp */}
-          <meta itemProp='name' content={defaultMeta.title} />
-          <meta itemProp='description' content={defaultMeta.description} />
-        </Head>
+      <Html lang='en' prefix='og: https://ogp.me/ns#'>
+        <Head />
         <body>
           <Main />
           <NextScript />
