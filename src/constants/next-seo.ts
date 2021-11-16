@@ -5,7 +5,7 @@ import { ogImage } from 'utils/ogImage';
 export const defaultMeta = {
   title: process.env.NEXT_PUBLIC_APPLICATION_NAME,
   siteName: process.env.NEXT_PUBLIC_APPLICATION_NAME,
-  description: `Ismail Habibi Herman's Portfolio.`,
+  description: `An online portfolio by Ismail Habibi Herman. Showcase of my summary, experience and some of my projects.`,
   type: 'website',
   robots: 'follow, index',
   keywords:

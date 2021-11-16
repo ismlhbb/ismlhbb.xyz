@@ -28,7 +28,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang='id'>
+      <Html lang='id' prefix='og: https://ogp.me/ns#'>
         <Head>
           <meta name='application-name' content={defaultMeta.title} />
           <meta name='format-detection' content='telephone=no' />
