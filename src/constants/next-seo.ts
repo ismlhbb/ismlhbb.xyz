@@ -39,6 +39,10 @@ export const defaultSEOConfig: DefaultSeoProps = {
   },
   additionalMetaTags: [
     {
+      name: 'viewport',
+      content: 'initial-scale=1.0, width=device-width',
+    },
+    {
       name: 'format-detection',
       content: 'telephone=no',
     },
