@@ -31,6 +31,10 @@ export const defaultSEOConfig: DefaultSeoProps = {
         url: defaultMeta.image,
         alt: 'ismlhbb.xyz og-image',
       },
+      {
+        url: '/images/logo.png',
+        alt: 'ismlhbb.xyz og-image',
+      },
     ],
     site_name: defaultMeta.title,
   },
