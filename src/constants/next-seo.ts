@@ -12,6 +12,7 @@ export const defaultMeta = {
     'ismail habibi, ismail habibi herman, ismailhabibi, ismlhbb, Ismail Habibi Herman, html, css, php, javascript, laravel, react, node, reactjs, react, typescipt, nextjs, next, redux, frontend, start up, startup, frontend developer, front end developer,',
   url: process.env.NEXT_PUBLIC_APPLICATION_BASE_URL,
   image: ogImage('ismlhbb.xyz'),
+  themeColor: '#0a192f',
 };
 
 export const defaultSEOConfig: DefaultSeoProps = {
@@ -52,7 +53,7 @@ export const defaultSEOConfig: DefaultSeoProps = {
     },
     {
       name: 'theme-color',
-      content: '#0a192f',
+      content: defaultMeta.themeColor,
     },
     {
       name: 'keyword',
@@ -70,12 +71,72 @@ export const defaultSEOConfig: DefaultSeoProps = {
       name: 'apple-mobile-web-app-status-bar-style',
       content: 'default',
     },
+    {
+      name: 'msapplication-TileColor',
+      content: defaultMeta.themeColor,
+    },
+    {
+      name: 'msapplication-TileImage',
+      content: '/favicon/ms-icon-144x144.png',
+    },
   ],
   additionalLinkTags: [
     {
       rel: 'apple-touch-icon',
-      href: '/favicon/apple-touch-icon.png',
+      href: '/favicon/apple-icon-57x57.png',
+      sizes: '57x57',
+    },
+    {
+      rel: 'apple-touch-icon',
+      href: '/favicon/apple-icon-60x60.png',
+      sizes: '60x60',
+    },
+    {
+      rel: 'apple-touch-icon',
+      href: '/favicon/apple-icon-72x72.png',
+      sizes: '72x72',
+    },
+    {
+      rel: 'apple-touch-icon',
+      href: '/favicon/apple-icon-76x76.png',
+      sizes: '76x76',
+    },
+    {
+      rel: 'apple-touch-icon',
+      href: '/favicon/apple-icon-114x114.png',
+      sizes: '114x114',
+    },
+    {
+      rel: 'apple-touch-icon',
+      href: '/favicon/apple-icon-120x120.png',
+      sizes: '120x120',
+    },
+    {
+      rel: 'apple-touch-icon',
+      href: '/favicon/apple-icon-144x144.png',
+      sizes: '144x144',
+    },
+    {
+      rel: 'apple-touch-icon',
+      href: '/favicon/apple-icon-152x152.png',
+      sizes: '152x152',
+    },
+    {
+      rel: 'apple-touch-icon',
+      href: '/favicon/apple-icon-57x57.png',
       sizes: '180x180',
+    },
+    {
+      rel: 'icon',
+      href: '/favicon/android-icon-192x192.png',
+      sizes: '192x192',
+      type: 'image/png',
+    },
+    {
+      rel: 'icon',
+      href: '/favicon/favicon-96x96.png',
+      sizes: '96x96',
+      type: 'image/png',
     },
     {
       rel: 'icon',
