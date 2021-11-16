@@ -13,10 +13,8 @@ export const ogImage = (text: string, options?: OgImageOptions) => {
     theme: 'dark',
     fontSize: '100px',
     author: encodeURIComponent('ismlhbb/'),
-    images: encodeURIComponent(
-      'https://assets.vercel.com/image/upload/front/assets/design/nextjs-white-logo.svg'
-    ),
-    images2: encodeURIComponent('https://next-ts-tw-starter.vercel.app/ts.svg'),
+    images: encodeURIComponent('https://ismlhbb.xyz/images/logo.png'),
+    images2: '',
   };
 
   const finalOptions: OgImageOptions = {
