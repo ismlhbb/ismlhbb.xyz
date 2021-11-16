@@ -9,9 +9,9 @@ const DescItems = [
   {
     items: (
       <p>
-        Experienced <b>Front End Developer</b> with strong knowledge creating
-        high-quality, scalable, predictable, and high-performance web
-        applications seeks the role which allows me to continue learning and
+        Experienced <b>Front End Developer</b> with strong knowledge to create{' '}
+        <b>high-quality, scalable, predictable</b> and <b>high-performance</b>{' '}
+        web applications seeks the role which allows me to continue learning and
         perfecting my skills as I provide high-quality work in a thriving,
         exciting and growing company.
       </p>
