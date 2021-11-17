@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImGithub, ImLinkedin } from 'react-icons/im';
+import { ImGithub, ImLinkedin, ImTwitter } from 'react-icons/im';
 import { IoMdMail } from 'react-icons/io';
 
 import FadeInSection from 'components/FadeInSection';
@@ -24,6 +24,10 @@ const socials = [
   {
     href: 'https://www.linkedin.com/in/ismailhabibi',
     item: <ImLinkedin style={{ fontSize: 19 }} />,
+  },
+  {
+    href: 'https://www.twitter.com/ismlhbb',
+    item: <ImTwitter style={{ fontSize: 19 }} />,
   },
 ];
 
