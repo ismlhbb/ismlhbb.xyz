@@ -9,7 +9,7 @@ type OgImageOptions = Partial<{
 
 export const ogImage = (text: string, options?: OgImageOptions) => {
   const defaultOptions: OgImageOptions = {
-    ogServiceUrl: 'https://og-image-ismlhbb.vercel.app',
+    ogServiceUrl: 'https://og.ismlhbb.xyz',
     theme: 'dark',
     fontSize: '100px',
     author: encodeURIComponent('ismlhbb/'),
