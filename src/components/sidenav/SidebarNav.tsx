@@ -15,19 +15,19 @@ const links = [
 const socials = [
   {
     href: 'mailto:contact.ismailhabibi@gmail.com',
-    item: <IoMdMail style={{ fontSize: 20 }} />,
+    item: <IoMdMail style={{ fontSize: 21 }} />,
   },
   {
     href: 'https://github.com/ismlhbb',
-    item: <ImGithub style={{ fontSize: 19 }} />,
+    item: <ImGithub style={{ fontSize: 21 }} />,
   },
   {
     href: 'https://www.linkedin.com/in/ismailhabibi',
-    item: <ImLinkedin style={{ fontSize: 19 }} />,
+    item: <ImLinkedin style={{ fontSize: 21 }} />,
   },
   {
     href: 'https://www.twitter.com/ismlhbb',
-    item: <ImTwitter style={{ fontSize: 19 }} />,
+    item: <ImTwitter style={{ fontSize: 21 }} />,
   },
 ];
 

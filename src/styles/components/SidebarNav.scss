@@ -24,7 +24,7 @@
 }
 
 .sidebar-socials {
-  @apply pt-10 w-24 flex flex-row justify-between pb-2;
+  @apply pt-10 w-32 flex flex-row justify-between pb-2;
 }
 
 .sidebar-active {
@@ -38,7 +38,7 @@
   }
 
   .sidebar-socials {
-    @apply pt-1 flex flex-row justify-around w-28;
+    @apply pt-1 flex flex-row justify-around w-36;
     padding-left: unset;
   }
 }
