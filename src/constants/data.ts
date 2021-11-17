@@ -55,19 +55,19 @@ export const projectData = {
     desc: 'An opinionated Next.js starter project bootstrapped with create-next-app, added with TypeScript, Tailwind, SCSS and Redux Setup.',
     techStack: 'Next.js, TypeScript, Tailwind, Redux, Scss',
     link: 'https://github.com/ismlhbb/next-ts-tw-starter/',
-    open: 'https://next-ts-tw-starter.vercel.app/',
+    open: 'https://next-ts-tw.ismlhbb.xyz/',
   },
   'React Vite Starter': {
     desc: 'An opinionated React.js starter project bootstrapped with Vite, added with TypeScript, Tailwind, SCSS and Redux Setup.',
     techStack: 'React.js, Vite, TypeScript, Tailwind, Redux, Scss',
     link: 'https://github.com/ismlhbb/react-vite-ts-tw-starter/',
-    open: 'http://react-vite-ts-tw-starter.vercel.app/',
+    open: 'http://react-vite-ts-tw.ismlhbb.xyz/',
   },
   'React Starter': {
     desc: 'An opinionated React.js starter project bootstrapped with create-react-app, added with TypeScript, Tailwind, SCSS and Redux Setup.',
     techStack: 'React.js, TypeScript, Tailwind, Redux, Scss',
     link: 'https://github.com/ismlhbb/react-ts-tw-starter/',
-    open: 'http://react-ts-tw-starter.vercel.app/',
+    open: 'http://react-ts-tw.ismlhbb.xyz/',
   },
   'BeePay Back Office': {
     desc: 'BeePay Back Office is a dashboard application for BeePay Admins and Financial Institutions to manage and control various features of the BeePay System.',
