@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from 'next/image';
 import * as React from 'react';
 
 import FadeInSection from 'components/FadeInSection';
@@ -60,7 +60,14 @@ const About = () => {
             </ul>
           </div>
           <div className='about-image'>
-            <img src='/images/me.jpg' alt='Me' />
+            <Image
+              alt='Ismail Habibi Herman'
+              height={249}
+              width={200}
+              src='/images/me.jpg'
+              className='rounded-xl'
+              priority
+            />
           </div>
         </div>
         <ButtonLink href={aboutCTA.url}>{aboutCTA.text}</ButtonLink>
