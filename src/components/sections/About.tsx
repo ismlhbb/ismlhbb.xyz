@@ -66,7 +66,7 @@ const About = () => {
               width={200}
               src='/images/me.jpg'
               className='rounded-xl'
-              priority
+              loading='lazy'
             />
           </div>
         </div>
