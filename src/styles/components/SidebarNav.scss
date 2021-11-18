@@ -31,7 +31,7 @@
   @apply text-secondary-lightest;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 639px) {
   .sidebar-nav {
     @apply w-full items-center pr-0 h-12;
     position: unset;

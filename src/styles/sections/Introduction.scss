@@ -31,7 +31,7 @@
   @apply flex items-center justify-center w-full mx-auto sm:justify-start;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 639px) {
   #intro {
     @apply m-0 items-center;
     padding-left: unset;
