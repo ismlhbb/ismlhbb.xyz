@@ -7,7 +7,7 @@
 }
 
 .about-description {
-  @apply text-secondary max-w-xl md:max-w-2xl text-base sm:text-lg font-semibold mb-3 mr-0 sm:mr-8;
+  @apply text-secondary w-full sm:max-w-[441px] md:max-w-2xl text-base sm:text-lg font-semibold mb-3 mr-0 sm:mr-1 md:mr-5;
 }
 
 .about-description a,
@@ -35,10 +35,10 @@
 }
 
 .about-image {
-  @apply relative min-w-[140px] md:min-w-[200px];
+  @apply min-w-[140px] md:min-w-[200px];
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 639px) {
   #about {
     height: unset;
     padding-left: unset;

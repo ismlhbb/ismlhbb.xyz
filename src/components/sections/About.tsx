@@ -1,8 +1,8 @@
-import Image from 'next/image';
 import * as React from 'react';
 
 import FadeInSection from 'components/FadeInSection';
 import ButtonLink from 'components/links/ButtonLink';
+import NextImage from 'components/NextImage';
 import { aboutCTA, aboutTechStack } from 'constants/data';
 
 const DescItems = [
@@ -59,16 +59,14 @@ const About = () => {
               })}
             </ul>
           </div>
-          <div className='about-image'>
-            <Image
-              alt='Ismail Habibi Herman'
-              height={249}
-              width={200}
-              src='/images/me.jpg'
-              className='rounded-xl'
-              loading='lazy'
-            />
-          </div>
+          <NextImage
+            className='about-image'
+            alt='Ismail Habibi Herman'
+            height={249}
+            width={200}
+            src='/images/me.jpg'
+            imgClassName='rounded-xl'
+          />
         </div>
         <ButtonLink href={aboutCTA.url}>{aboutCTA.text}</ButtonLink>
       </FadeInSection>

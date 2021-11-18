@@ -9,6 +9,8 @@ type NextImageProps = {
   alt: string;
   width: string | number;
   height: string | number;
+  layout?: string;
+  loading?: string;
 } & ImageProps;
 
 /**
@@ -25,6 +27,8 @@ export default function NextImage({
   className,
   imgClassName,
   blurClassName,
+  layout = 'responsive',
+  loading = 'lazy',
   ...rest
 }: NextImageProps) {
   const [status, setStatus] = React.useState(
@@ -41,7 +45,7 @@ export default function NextImage({
         className={clsx(
           imgClassName,
           // text-gray to hide alt text
-          'bg-gray-400 text-gray-400 ',
+          'bg-gray-400 text-gray-400',
           status === 'loading' && clsx('animate-pulse', blurClassName)
         )}
         src={src}
@@ -49,7 +53,8 @@ export default function NextImage({
         height={height}
         alt={alt}
         onLoadingComplete={() => setStatus('complete')}
-        layout='responsive'
+        layout={layout}
+        loading={loading}
         {...rest}
       />
     </figure>
