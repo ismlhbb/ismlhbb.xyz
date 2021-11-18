@@ -90,6 +90,11 @@ svg {
   @apply bg-green-bright rounded-md;
 }
 
+/* Tippy */
+.tippy-tooltip [x-circle] {
+  background-color: transparent !important;
+}
+
 @layer utilities {
   .animated-underline {
     background-image: linear-gradient(#33333300, #33333300),
