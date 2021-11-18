@@ -6,10 +6,10 @@ import FadeInSection from 'components/FadeInSection';
 const Experience = () => {
   return (
     <div id='experience'>
+      <div className='section-header '>
+        <span className='section-title'>/ experience</span>
+      </div>
       <FadeInSection>
-        <div className='section-header '>
-          <span className='section-title'>/ experience</span>
-        </div>
         <JobList />
       </FadeInSection>
     </div>

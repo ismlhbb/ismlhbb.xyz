@@ -39,10 +39,10 @@ const DescItems = [
 const About = () => {
   return (
     <div id='about'>
+      <div className='section-header'>
+        <span className='section-title'>/ about me</span>
+      </div>
       <FadeInSection>
-        <div className='section-header'>
-          <span className='section-title'>/ about me</span>
-        </div>
         <div className='about-content'>
           <div className='about-description'>
             {DescItems.map((desc, i) => (
