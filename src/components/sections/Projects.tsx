@@ -4,6 +4,7 @@ import { MdFolderOpen, MdOpenInBrowser } from 'react-icons/md';
 
 import FadeInSection from 'components/FadeInSection';
 import UnstyledLink from 'components/links/UnstyledLink';
+import TechIcons, { TechListType } from 'components/TechIcons';
 import { projectData } from 'constants/data';
 
 const Projects = () => {
@@ -34,7 +35,11 @@ const Projects = () => {
                 </div>
                 <div className='card-title'>{Object.keys(projectData)[i]}</div>
                 <div className='card-desc'>{project.desc}</div>
-                <div className='card-tech'>{project.techStack}</div>
+                <div className='card-tech'>
+                  <TechIcons
+                    techs={project.techStack.split(', ') as Array<TechListType>}
+                  />
+                </div>
               </li>
             </FadeInSection>
           ))}
