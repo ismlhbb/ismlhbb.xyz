@@ -5,7 +5,7 @@ import 'styles/globals.scss';
 import 'react-typist/dist/Typist.css';
 
 import PageLoadingBar from 'components/PageLoadingBar';
-import { defaultSEOConfig } from 'constants/next-seo';
+import { defaultSEOConfig } from 'config/next-seo';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
