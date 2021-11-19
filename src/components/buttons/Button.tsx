@@ -28,15 +28,15 @@ export default function Button({
       {...rest}
       disabled={disabled}
       className={clsx(
-        'py-2 px-4 rounded font-bold hover:text-primary-lightest',
-        'border border-gray-600 shadow-sm',
+        'py-2 px-4 rounded font-bold',
+        'border shadow-sm',
         'focus:outline-none',
         {
-          'bg-dark  text-on-primary hover:text-on-primary disabled:hover:text-on-primary disabled:bg-gray-700':
+          'bg-dark text-on-primary disabled:bg-gray-700 border-gray-600 focus-visible:text-on-primary':
             variant === 'dark',
-          'bg-white disabled:bg-gray-200 text-dark hover:bg-gray-200 hover:text-dark focus-visible:text-dark border-gray-400 disabled:hover:text-dark':
+          'bg-white text-dark disabled:bg-gray-200 hover:bg-gray-200 border-gray-400 focus-visible:text-dark':
             variant === 'light',
-          'bg-primary-darker border-green-bright text-green-bright disabled:bg-primary-lighter hover:text-green-bright hover:bg-primary-lighter disabled:brightness-75 focus-visible:text-green-bright':
+          'bg-primary-darker text-green-bright disabled:bg-primary border-green-bright hover:bg-primary-lighter disabled:brightness-75 focus-visible:text-green-bright':
             variant === 'primary',
         },
         'disabled:cursor-not-allowed',
