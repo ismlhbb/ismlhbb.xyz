@@ -33,7 +33,7 @@ export default function TechIcons({
               <div
                 className={clsx(
                   iconClassName,
-                  'transition-colors text-secondary hover:text-green-bright'
+                  'transition-colors text-secondary-lighter hover:text-green-bright'
                 )}
               >
                 <current.icon />
