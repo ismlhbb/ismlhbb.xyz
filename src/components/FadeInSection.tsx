@@ -11,12 +11,15 @@ const FadeInSection = ({ delay, children }: FadeInSectionProps) => {
 
   React.useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => setVisible(entry.isIntersecting));
+      entries.forEach((entry) => {
+        //  add this to make this run only once
+        if (entry.isIntersecting) {
+          setVisible(entry.isIntersecting);
+        }
+      });
     });
     observer.observe(domRef.current);
-    return () => {
-      setVisible(false);
-    };
+    return () => observer.unobserve(domRef.current);
   }, []);
 
   return (
