@@ -31,10 +31,10 @@ const FadeInSection = ({
   return (
     <div
       className={clsx({
-        'fade-in-section': !disabled,
-        'is-visible': isVisible && !disabled,
+        'fade-in-section': disabled === false,
+        'is-visible': isVisible && disabled === false,
       })}
-      style={{ transitionDelay: `${delay && !disabled}` }}
+      style={{ transitionDelay: !disabled ? `${delay}` : '' }}
       ref={domRef}
     >
       {children}
