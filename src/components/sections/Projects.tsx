@@ -37,6 +37,7 @@ const Projects = () => {
                 <div className='card-desc'>{project.desc}</div>
                 <div className='card-tech'>
                   <TechIcons
+                    className='grid-cols-7'
                     iconClassName='text-xl'
                     techs={project.techStack.split(', ') as Array<TechListType>}
                   />

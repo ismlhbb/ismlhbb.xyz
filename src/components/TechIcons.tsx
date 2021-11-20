@@ -17,7 +17,7 @@ export default function TechIcons({
   techs,
 }: TechIconsProps) {
   return (
-    <ul className={clsx(className, 'flex gap-2')}>
+    <ul className={clsx(className, 'grid grid-cols-9')}>
       {techs.map((tech) => {
         if (!techList[tech]) return;
 
