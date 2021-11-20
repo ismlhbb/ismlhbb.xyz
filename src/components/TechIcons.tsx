@@ -21,7 +21,7 @@ export default function TechIcons({
   fadeInSection = false,
 }: TechIconsProps) {
   return (
-    <ul className={clsx(className, 'grid grid-cols-9')}>
+    <ul className={clsx(className, 'grid grid-cols-9 list-none')}>
       {techs.map((tech, i) => {
         if (!techList[tech]) return;
 
