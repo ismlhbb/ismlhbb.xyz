@@ -1,11 +1,17 @@
+import clsx from 'clsx';
 import * as React from 'react';
 
 interface FadeInSectionProps {
   delay?: string;
   children: React.ReactNode;
+  disabled?: boolean;
 }
 
-const FadeInSection = ({ delay, children }: FadeInSectionProps) => {
+const FadeInSection = ({
+  delay,
+  children,
+  disabled = false,
+}: FadeInSectionProps) => {
   const [isVisible, setVisible] = React.useState(false);
   const domRef = React.useRef();
 
@@ -24,8 +30,11 @@ const FadeInSection = ({ delay, children }: FadeInSectionProps) => {
 
   return (
     <div
-      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
-      style={{ transitionDelay: `${delay}` }}
+      className={clsx({
+        'fade-in-section': !disabled,
+        'is-visible': isVisible && !disabled,
+      })}
+      style={{ transitionDelay: `${delay && !disabled}` }}
       ref={domRef}
     >
       {children}
