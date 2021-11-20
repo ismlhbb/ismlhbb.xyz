@@ -15,13 +15,11 @@
 }
 
 .projects-card {
-  @apply relative cursor-default flex flex-col h-full py-8 px-7 bg-primary-lighter;
-  border-radius: 16px;
+  @apply rounded-2xl relative cursor-default flex flex-col h-full py-8 px-7 bg-primary-lighter transition-all;
 }
 
 .projects-card:hover {
-  @apply bg-primary-lightest;
-  transform: translateY(-7px);
+  @apply bg-primary-lightest -translate-y-2;
 }
 
 .card-header {

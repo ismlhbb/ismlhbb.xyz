@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 import { ImGithub } from 'react-icons/im';
 import { MdFolderOpen, MdOpenInBrowser } from 'react-icons/md';
 
@@ -13,7 +12,7 @@ const Projects = () => {
       <div className='section-header '>
         <span className='section-title'>/ software-creations</span>
       </div>
-      <div className='project-container'>
+      <div>
         <ul className='projects-grid'>
           {Object.values(projectData).map((project, i) => (
             <FadeInSection key={i} delay={`${i + 1}00ms`}>
