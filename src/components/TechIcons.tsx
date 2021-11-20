@@ -21,7 +21,7 @@ export default function TechIcons({
   fadeInSection = false,
 }: TechIconsProps) {
   return (
-    <ul className={clsx(className, 'grid grid-cols-9 list-none')}>
+    <div className={clsx(className, 'grid grid-cols-9')}>
       {techs.map((tech, i) => {
         if (!techList[tech]) return;
 
@@ -30,18 +30,18 @@ export default function TechIcons({
         return (
           <Tooltip key={current.name} content={<p>{current.name}</p>}>
             <FadeInSection delay={`${i + 1}00ms`} disabled={!fadeInSection}>
-              <li
+              <div
                 className={clsx(
                   iconClassName,
                   'transition-colors text-secondary hover:text-green-bright'
                 )}
               >
                 <current.icon />
-              </li>
+              </div>
             </FadeInSection>
           </Tooltip>
         );
       })}
-    </ul>
+    </div>
   );
 }

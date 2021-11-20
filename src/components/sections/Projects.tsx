@@ -12,10 +12,10 @@ const Projects = () => {
       <div className='section-header '>
         <span className='section-title'>/ software-creations</span>
       </div>
-      <ul className='projects-grid'>
+      <div className='projects-grid'>
         {Object.values(projectData).map((project, i) => (
           <FadeInSection key={i} delay={`${i + 1}00ms`}>
-            <li className='projects-card'>
+            <div className='projects-card'>
               <div className='card-header'>
                 <MdFolderOpen className='text-4xl text-green-bright' />
                 <span className='external-links'>
@@ -46,10 +46,10 @@ const Projects = () => {
                   techs={project.techStack.split(', ') as Array<TechListType>}
                 />
               </div>
-            </li>
+            </div>
           </FadeInSection>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

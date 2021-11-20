@@ -15,7 +15,7 @@
 }
 
 .projects-card {
-  @apply list-none rounded-2xl relative cursor-default flex flex-col h-full py-8 px-7 bg-primary-lighter transition-all;
+  @apply rounded-2xl relative cursor-default flex flex-col h-full py-8 px-7 bg-primary-lighter transition-all;
 }
 
 .projects-card:hover {
