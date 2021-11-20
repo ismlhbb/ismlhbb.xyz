@@ -1,8 +1,9 @@
 import * as React from 'react';
+import { IoArrowDownOutline } from 'react-icons/io5';
 import Typist from 'react-typist';
 
 import FadeInSection from 'components/FadeInSection';
-import ButtonLink from 'components/links/ButtonLink';
+import UnstyledLink from 'components/links/UnstyledLink';
 import { introData } from 'constants/data';
 
 const Introduction = () => {
@@ -18,16 +19,15 @@ const Introduction = () => {
       <FadeInSection>
         <h5 className='intro-subtitle'>{introData.subtitle}</h5>
         <p className='intro-desc'>{introData.description}</p>
-        <div className='intro-cta'>
-          <ButtonLink
-            openNewTab={false}
-            isScrollLink
-            href={introData.nextSection}
-          >
-            {introData.ctaText}
-          </ButtonLink>
-        </div>
       </FadeInSection>
+      <UnstyledLink
+        className='intro-cta'
+        openNewTab={false}
+        isScrollLink
+        href={introData.nextSection}
+      >
+        <IoArrowDownOutline className='intro-cta-item' />
+      </UnstyledLink>
     </div>
   );
 };

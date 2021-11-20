@@ -28,7 +28,11 @@
 }
 
 .intro-cta {
-  @apply flex items-center justify-center w-full mx-auto sm:justify-start;
+  @apply absolute bottom-2 md:bottom-10 left-1/2 -translate-x-1/2 rounded-md cursor-pointer transition-colors text-secondary hover:text-green-bright focus-visible:text-green-bright;
+}
+
+.intro-cta-item {
+  @apply w-8 h-8 md:w-10 md:h-10 animate-bounce;
 }
 
 @media only screen and (max-width: 639px) {
