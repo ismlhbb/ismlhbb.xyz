@@ -21,6 +21,7 @@ const Introduction = () => {
         <p className='intro-desc'>{introData.description}</p>
       </FadeInSection>
       <UnstyledLink
+        aria-label='next section'
         className='intro-cta'
         openNewTab={false}
         isScrollLink
