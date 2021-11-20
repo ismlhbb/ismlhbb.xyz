@@ -3,6 +3,7 @@ import * as React from 'react';
 import FadeInSection from 'components/FadeInSection';
 import ButtonLink from 'components/links/ButtonLink';
 import NextImage from 'components/NextImage';
+import TechIcons, { TechListType } from 'components/TechIcons';
 import { aboutCTA, aboutTechStack } from 'constants/data';
 
 const DescItems = [
@@ -49,15 +50,10 @@ const About = () => {
               <div key={i}>{desc.items}</div>
             ))}
             {'Here are some technologies I have been working with:'}
-            <ul className='tech-stack'>
-              {aboutTechStack.map(function (tech_item, i) {
-                return (
-                  <FadeInSection key={i} delay={`${i + 1}00ms`}>
-                    <li>{tech_item}</li>
-                  </FadeInSection>
-                );
-              })}
-            </ul>
+            <TechIcons
+              iconClassName='about-tech-stack'
+              techs={aboutTechStack.split(', ') as Array<TechListType>}
+            />
           </div>
           <NextImage
             className='about-image'

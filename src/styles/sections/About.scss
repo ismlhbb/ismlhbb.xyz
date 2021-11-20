@@ -19,19 +19,8 @@
   @apply mb-3 text-base sm:text-lg;
 }
 
-.about-description ul {
-  @apply pt-4 grid;
-  list-style-type: none;
-  grid-template-columns: repeat(3, minmax(150px, 1fr));
-}
-
-.about-description li {
-  @apply relative pl-6 text-base sm:text-lg text-secondary;
-}
-
-.about-description li::before {
-  @apply absolute text-green-bright left-0;
-  content: '▹    ';
+.about-tech-stack {
+  @apply text-2xl sm:text-3xl my-3;
 }
 
 .about-image {
@@ -43,10 +32,6 @@
     height: unset;
     padding-left: unset;
     padding-right: unset;
-  }
-
-  .about-description ul {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 
   .about-image {
