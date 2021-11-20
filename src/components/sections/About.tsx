@@ -51,6 +51,7 @@ const About = () => {
             ))}
             {'Here are some technologies I have been working with:'}
             <TechIcons
+              fadeInSection
               iconClassName='about-tech-stack'
               techs={aboutTechStack.split(', ') as Array<TechListType>}
             />
