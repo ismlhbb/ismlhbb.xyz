@@ -9,14 +9,14 @@ import { introData } from 'constants/data';
 const Introduction = () => {
   return (
     <div id='intro'>
-      <Typist avgTypingDelay={100}>
+      <Typist avgTypingDelay={120}>
         <span className='intro-title'>
           {'hi, '}
           <span className='intro-name'>{introData.name}</span>
           {' here.'}
         </span>
       </Typist>
-      <FadeInSection>
+      <FadeInSection delay='100ms'>
         <h5 className='intro-subtitle'>{introData.subtitle}</h5>
         <p className='intro-desc'>{introData.description}</p>
       </FadeInSection>

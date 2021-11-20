@@ -28,7 +28,7 @@
 }
 
 .intro-cta {
-  @apply absolute bottom-2 md:bottom-10 left-1/2 -translate-x-1/2 rounded-md cursor-pointer transition-colors text-secondary hover:text-green-bright focus-visible:text-green-bright;
+  @apply absolute bottom-2 md:bottom-10 left-1/2 -translate-x-1/2 rounded-md transition-colors text-secondary-lighter hover:text-green-bright focus-visible:text-green-bright;
 }
 
 .intro-cta-item {
