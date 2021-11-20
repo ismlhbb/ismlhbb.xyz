@@ -57,12 +57,13 @@ const About = () => {
             />
           </div>
           <NextImage
-            className='about-image'
+            useSkeleton
+            className='about-image-wrapper'
             alt='Ismail Habibi Herman'
             height={249}
             width={200}
             src='/images/me.jpg'
-            imgClassName='rounded-xl'
+            imgClassName='about-image'
           />
         </div>
         <ButtonLink href={aboutCTA.url}>{aboutCTA.text}</ButtonLink>

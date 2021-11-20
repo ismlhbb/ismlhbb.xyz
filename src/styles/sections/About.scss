@@ -23,8 +23,13 @@
   @apply text-2xl sm:text-3xl my-3;
 }
 
-.about-image {
+.about-image-wrapper {
   @apply min-w-[140px] md:min-w-[200px];
+}
+
+.about-image {
+  @apply rounded-xl;
+  border: 2px solid var(--green-bright) !important;
 }
 
 @media only screen and (max-width: 639px) {
@@ -34,7 +39,7 @@
     padding-right: unset;
   }
 
-  .about-image {
+  .about-image-wrapper {
     @apply hidden;
   }
 }
