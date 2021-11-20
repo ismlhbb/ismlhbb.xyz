@@ -24,6 +24,7 @@ import {
   SiSass,
   SiTailwindcss,
   SiTypescript,
+  SiVisualstudiocode,
   SiVite,
 } from 'react-icons/si';
 
@@ -38,7 +39,7 @@ export const introData = {
 
 // About
 export const aboutTechStack =
-  'javascript, typescript, react, nextjs, redux, mobx, html5, css3, scss, tailwindcss, materialui, git';
+  'javascript, typescript, react, nextjs, redux, mobx, html5, css3, scss, tailwindcss, materialui, firebase, git, vscode';
 
 export const aboutCTA = {
   text: 'View Resume',
@@ -254,5 +255,9 @@ export const techList = {
   vite: {
     icon: SiVite,
     name: 'Vite',
+  },
+  vscode: {
+    icon: SiVisualstudiocode,
+    name: 'Visual Studio Code',
   },
 };
