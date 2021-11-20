@@ -1,3 +1,32 @@
+import { IoLogoVercel } from 'react-icons/io5';
+import {
+  SiBootstrap,
+  SiCss3,
+  SiFirebase,
+  SiGit,
+  SiGoogleanalytics,
+  SiHtml5,
+  SiJavascript,
+  SiJquery,
+  SiLaravel,
+  SiMarkdown,
+  SiMaterialui,
+  SiMobx,
+  SiMongodb,
+  SiMysql,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiNotion,
+  SiPhp,
+  SiPrettier,
+  SiReact,
+  SiRedux,
+  SiSass,
+  SiTailwindcss,
+  SiTypescript,
+  SiVite,
+} from 'react-icons/si';
+
 // Intro
 export const introData = {
   name: 'ismail',
@@ -8,19 +37,8 @@ export const introData = {
 };
 
 // About
-export const aboutTechStack = [
-  'JavaScript',
-  'TypeScript',
-  'React.js',
-  'Next.js',
-  'Redux',
-  'MobX',
-  'HTML & CSS',
-  'Scss',
-  'Jss',
-  'Tailwind',
-  'Material UI',
-];
+export const aboutTechStack =
+  'javascript, typescript, react, nextjs, redux, mobx, html5, css3, scss, tailwindcss, materialui, git';
 
 export const aboutCTA = {
   text: 'View Resume',
@@ -129,4 +147,112 @@ export const projectData = {
 export const footerData = {
   profileName: 'Ismail Habibi Herman',
   profileUrl: process.env.NEXT_PUBLIC_APPLICATION_BASE_URL,
+};
+
+// TechStack
+export const techList = {
+  react: {
+    icon: SiReact,
+    name: 'React',
+  },
+  nextjs: {
+    icon: SiNextdotjs,
+    name: 'Next.js',
+  },
+  tailwindcss: {
+    icon: SiTailwindcss,
+    name: 'Tailwind CSS',
+  },
+  scss: {
+    icon: SiSass,
+    name: 'SCSS',
+  },
+  javascript: {
+    icon: SiJavascript,
+    name: 'JavaScript',
+  },
+  typescript: {
+    icon: SiTypescript,
+    name: 'TypeScript',
+  },
+  nodejs: {
+    icon: SiNodedotjs,
+    name: 'Node.js',
+  },
+  firebase: {
+    icon: SiFirebase,
+    name: 'Firebase',
+  },
+  mongodb: {
+    icon: SiMongodb,
+    name: 'MongoDB',
+  },
+  swr: {
+    icon: IoLogoVercel,
+    name: 'SWR',
+  },
+  redux: {
+    icon: SiRedux,
+    name: 'Redux',
+  },
+  mdx: {
+    icon: SiMarkdown,
+    name: 'MDX',
+  },
+  prettier: {
+    icon: SiPrettier,
+    name: 'Prettier',
+  },
+  analytics: {
+    icon: SiGoogleanalytics,
+    name: 'Google Analytics',
+  },
+  git: {
+    icon: SiGit,
+    name: 'Git',
+  },
+  notion: {
+    icon: SiNotion,
+    name: 'Notion API',
+  },
+  mobx: {
+    icon: SiMobx,
+    name: 'MobX',
+  },
+  php: {
+    icon: SiPhp,
+    name: 'PHP',
+  },
+  html5: {
+    icon: SiHtml5,
+    name: 'HTML5',
+  },
+  css3: {
+    icon: SiCss3,
+    name: 'CSS3',
+  },
+  materialui: {
+    icon: SiMaterialui,
+    name: 'Material UI',
+  },
+  bootstrap: {
+    icon: SiBootstrap,
+    name: 'Bootstrap',
+  },
+  jquery: {
+    icon: SiJquery,
+    name: 'jQuery',
+  },
+  mysql: {
+    icon: SiMysql,
+    name: 'MySQL',
+  },
+  laravel: {
+    icon: SiLaravel,
+    name: 'Laravel',
+  },
+  vite: {
+    icon: SiVite,
+    name: 'Vite',
+  },
 };
