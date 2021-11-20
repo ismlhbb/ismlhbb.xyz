@@ -9,7 +9,7 @@ import { introData } from 'constants/data';
 const Introduction = () => {
   return (
     <div id='intro'>
-      <Typist avgTypingDelay={120}>
+      <Typist avgTypingDelay={100}>
         <span className='intro-title'>
           {'hi, '}
           <span className='intro-name'>{introData.name}</span>
