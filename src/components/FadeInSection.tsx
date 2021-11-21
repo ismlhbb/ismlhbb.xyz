@@ -16,6 +16,7 @@ const FadeInSection = ({
   const domRef = React.useRef();
 
   React.useEffect(() => {
+    const { current } = domRef;
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         //  add this to make this run only once
@@ -24,8 +25,8 @@ const FadeInSection = ({
         }
       });
     });
-    observer.observe(domRef.current);
-    return () => observer.unobserve(domRef.current);
+    observer.observe(current);
+    return () => observer.unobserve(current);
   }, []);
 
   return (
