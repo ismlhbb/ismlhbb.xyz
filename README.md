@@ -4,9 +4,7 @@
 
 [![CodeFactor](https://www.codefactor.io/repository/github/ismlhbb/ismlhbb.xyz/badge)](https://www.codefactor.io/repository/github/ismlhbb/ismlhbb.xyz)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/ismlhbb/ismlhbb.xyz) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ismlhbb/ismlhbb.xyz)
-
-This is a newest release of my personal website: [www.ismlhbb.xyz](https://www.ismlhbb.xyz/)
+This is a newest release of my personal website: [www.ismlhbb.xyz](https://www.ismlhbb.xyz/) built using Next.js, TypeScript and Tailwind CSS.
 
 ## Set Up
 
@@ -36,7 +34,7 @@ Open [http://localhost:3000](http://localhost:3000) to see the result.
 
 ## Build and run for production
 
-### Generate a full static production build
+Generate a full static production build
 
 ```bash
 yarn build
