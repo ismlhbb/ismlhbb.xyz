@@ -16,7 +16,7 @@ const Introduction = () => {
           {' here.'}
         </span>
       </Typist>
-      <FadeInSection delay='100ms'>
+      <FadeInSection>
         <h5 className='intro-subtitle'>{introData.subtitle}</h5>
         <p className='intro-desc'>{introData.description}</p>
       </FadeInSection>
