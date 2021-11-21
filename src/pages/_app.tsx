@@ -2,7 +2,6 @@ import type { AppProps } from 'next/app';
 import { DefaultSeo } from 'next-seo';
 
 import 'styles/globals.scss';
-import 'react-typist/dist/Typist.css';
 import 'react-tippy/dist/tippy.css';
 
 import PageLoadingBar from 'components/PageLoadingBar';

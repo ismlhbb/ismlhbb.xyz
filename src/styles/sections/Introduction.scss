@@ -2,19 +2,26 @@
   @apply flex flex-col justify-center min-h-screen;
 }
 
-.Typist {
-  @apply text-secondary-lightest text-left text-7xl my-4 mx-0;
-  .Cursor--blinking {
-    @apply text-green-bright;
-  }
-}
-
 .intro-title {
-  @apply text-7xl;
+  @apply relative text-secondary-lightest text-7xl text-left my-4 mx-0 max-w-max;
 }
 
 .intro-name {
-  @apply font-bold text-7xl text-green-bright;
+  @apply font-bold text-green-bright;
+}
+
+.intro-title::before,
+.intro-title::after {
+  @apply absolute inset-0;
+  content: '';
+}
+
+.intro-title::before {
+  @apply animate-typewriter bg-primary;
+}
+
+.intro-title::after {
+  @apply w-1.5 rounded-xl mx-1 bg-green-bright animate-typewriter-blink;
 }
 
 .intro-subtitle {
@@ -44,10 +51,6 @@
   .intro-title,
   .intro-name {
     @apply text-5xl;
-  }
-
-  .Typist {
-    @apply text-4xl;
   }
 
   .intro-subtitle {
