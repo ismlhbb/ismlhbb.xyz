@@ -36,6 +36,25 @@ module.exports = {
         dark: '#222222',
         'green-bright': `var(--green-bright)`,
       },
+      keyframes: {
+        typewriter: {
+          to: {
+            left: '100%',
+          },
+        },
+        blink: {
+          to: {
+            background: 'transparent',
+          },
+        },
+      },
+      animation: {
+        typewriter:
+          'typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards',
+        blink: 'blink 1s steps(var(--typewriterCharacters)) infinite',
+        'typewriter-blink':
+          'typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, blink 1s steps(var(--typewriterCharacters)) infinite',
+      },
     },
   },
   variants: {
