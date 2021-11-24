@@ -4,7 +4,7 @@
 
 [![CodeFactor](https://www.codefactor.io/repository/github/ismlhbb/ismlhbb.xyz/badge)](https://www.codefactor.io/repository/github/ismlhbb/ismlhbb.xyz)
 
-This is a newest release of my personal website: [www.ismlhbb.xyz](https://www.ismlhbb.xyz/) built using Next.js, TypeScript and Tailwind CSS.
+This is a newest release of my personal website: [ismlhbb.xyz](https://ismlhbb.xyz/) built using Next.js, TypeScript and Tailwind CSS.
 
 ## Set Up
 
