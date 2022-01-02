@@ -48,15 +48,37 @@ export const aboutCTA = {
 
 // Experience
 export const experienceItems = {
+  'Flash Mobile': {
+    jobTitle: 'Frontend Developer',
+    duration: 'NOV 2021 - Present',
+    desc: [
+      'Create, maintain, optimize, troubleshoot, and improve web-based applications for the company, users and merchants',
+      'Revamp Flash Mobile Dashboard for Merchant application using React, TypeScript, Redux, Scss',
+      'Revamp Flash Mobile Dashboard for Admin application using React, TypeScript, Redux, Scss',
+    ],
+    jobTitle2: '',
+    duration2: '',
+    desc2: [] as string[],
+  },
   Flick: {
     jobTitle: 'Frontend Developer',
     duration: 'NOV 2020 - NOV 2021',
     desc: [
-      'Developed web-based applications for the company, users and merchants',
-      'Developed BeePay Back Office for Financial Institution and Admin using React, TypeScript, Redux, Material UI, Scss',
-      'Developed BeePay Shop using React, TypeScript, Redux, Material UI, Scss',
-      'Developed FlickSilvi Web v1 using React, Typescript, Redux, Material UI, Scss',
-      'Developed Silvi Merchant Back Office v1.1+ using React, TypeScript, MobX, Material UI, Scss',
+      'Create, maintain, optimize, troubleshoot, and improve web-based applications for the company, users and merchants',
+      'Work closely with Backend and QA Team for system integration in the web platform',
+      'Work within an agile development methods',
+      'Collaborate with product team to implement new feature of the system.',
+      'Develop from scratch BeePay Back Office for Financial Institution and Admin using React, TypeScript, Redux, Material UI, Scss',
+      'Develop from scratch BeePay Shop using React, TypeScript, Redux, Material UI, Scss',
+      'Develop from scratch FlickSilvi Web v1 using React, Typescript, Redux, Material UI, Scss',
+      'Develop Silvi Merchant Back Office v1.1+ using React, TypeScript, MobX, Tailwind CSS, Material UI, Scss',
+    ],
+    jobTitle2: 'Lead Frontend Developer',
+    duration2: 'JUN 2021 - NOV 2021',
+    desc2: [
+      'Plan and determine the technology used in Frontend development',
+      'Responsible to lead and supervise Frontend team',
+      'Had an authority as a decision maker for Frontend team',
     ],
   },
   'Kementerian PUPR': {
@@ -65,6 +87,9 @@ export const experienceItems = {
     desc: [
       'Design and build a web-based letter submission and approval system for managing letter drafts using PHP, MySql, including a custom UI with Bootstrap and CSS',
     ],
+    jobTitle2: '',
+    duration2: '',
+    desc2: [] as string[],
   },
 };
 
