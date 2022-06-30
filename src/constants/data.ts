@@ -53,8 +53,8 @@ export const experienceItems = {
     duration: 'NOV 2021 - Present',
     desc: [
       'Create, maintain, optimize, troubleshoot, and improve web-based applications for the company, users and merchants',
-      'Revamp Flash Mobile Dashboard for Merchant application using React, TypeScript, Redux, Scss',
-      'Revamp Flash Mobile Dashboard for Admin application using React, TypeScript, Redux, Scss',
+      'Revamp from scratch Flash Mobile Merchant Portal Dashboard application for Merchant using React, TypeScript, Redux Toolkit, Scss',
+      'Revamp from scratch Flash Mobile Merchant Portal Backoffice application for Internal Admin using React, TypeScript, Redux Toolkit, Scss',
     ],
     jobTitle2: '',
     duration2: '',
@@ -68,10 +68,10 @@ export const experienceItems = {
       'Work closely with Backend and QA Team for system integration in the web platform',
       'Work within an agile development methods',
       'Collaborate with product team to implement new feature of the system.',
-      'Develop from scratch BeePay Back Office for Financial Institution and Admin using React, TypeScript, Redux, Material UI, Scss',
-      'Develop from scratch BeePay Shop using React, TypeScript, Redux, Material UI, Scss',
-      'Develop from scratch FlickSilvi Web v1 using React, Typescript, Redux, Material UI, Scss',
-      'Develop Silvi Merchant Back Office v1.1+ using React, TypeScript, MobX, Tailwind CSS, Material UI, Scss',
+      'Developed from scratch BeePay Back Office for Financial Institution and Admin using React, TypeScript, Redux, Material UI, Scss',
+      'Developed from scratch BeePay Shop using React, TypeScript, Redux, Material UI, Scss',
+      'Developed from scratch FlickSilvi Web v1 using React, Typescript, Redux, Material UI, Scss',
+      'Developed Silvi Merchant Back Office v1.1+ using React, TypeScript, MobX, Material UI, Scss',
     ],
     jobTitle2: 'Lead Frontend Developer',
     duration2: 'JUN 2021 - NOV 2021',
@@ -79,6 +79,9 @@ export const experienceItems = {
       'Plan and determine the technology used in Frontend development',
       'Responsible to lead and supervise Frontend team',
       'Had an authority as a decision maker for Frontend team',
+      'Mentor teammates on best practices, code design considerations, and quality including code reviews and peer programming',
+      'Improve the user experience, polish the interface and pay close attention to details',
+      'Responsible to ensure the quality of the source code and conducts source code reviews',
     ],
   },
   'Kementerian PUPR': {
@@ -95,6 +98,48 @@ export const experienceItems = {
 
 // Projects
 export const projectData = {
+  'Merchant Portal Dashboard': {
+    desc: `A dashboard web application to provide Flash Mobile Merchants to register, manage, control and utilize products and services of Flash Mobile.`,
+    techStack: 'react, typescript, redux, scss',
+    link: '',
+    open: '',
+  },
+  'Merchant Portal Backoffice': {
+    desc: `A dashboard web application to provide Flash Mobile internal admins and other staff to manage and control various configurations, products and features of the Flash Mobile System.`,
+    techStack: 'react, typescript, redux, scss',
+    link: '',
+    open: '',
+  },
+  'Silvi Merchant Back Office v1.1+': {
+    desc: `A dashboard application for Silvi's Merchant to manage and control various features of the Silvi System.`,
+    techStack: 'react, typescript, mobx, tailwindcss, materialui, scss',
+    link: '',
+    open: '',
+  },
+  'BeePay Shop': {
+    desc: 'A social commerce application for BeePay Users to shop for various kinds of goods sold by BeePay Merchants.',
+    techStack: 'react, typescript, redux, materialui, scss',
+    link: '',
+    open: '',
+  },
+  'FlickSilvi Web v1': {
+    desc: 'A self service application that allows users to directly order food by simply scanning the QR code at the restaurant table.',
+    techStack: 'react, typescript, redux, materialui, scss, analytics',
+    link: '',
+    open: '',
+  },
+  'BeePay Back Office': {
+    desc: 'A dashboard application for BeePay Admins and Financial Institutions to manage and control various features of the BeePay System.',
+    techStack: 'react, typescript, redux, materialui, scss',
+    link: '',
+    open: '',
+  },
+  'ismlhbb.xyz': {
+    desc: 'An online portfolio by Ismail Habibi Herman. Showcase of my projects, details about me and my experiences. Built using Next, TypeScript, Tailwind, Scss',
+    techStack: 'nextjs, typescript, tailwindcss, scss',
+    link: 'https://github.com/ismlhbb/ismlhbb.xyz',
+    open: 'https://ismlhbb.xyz',
+  },
   'Next Starter': {
     desc: 'An opinionated Next.js starter project bootstrapped with create-next-app, added with TypeScript, Tailwind, SCSS and Redux Setup.',
     techStack: 'nextjs, typescript, tailwindcss, redux, scss',
@@ -112,30 +157,6 @@ export const projectData = {
     techStack: 'react, typescript, tailwindcss, redux, scss',
     link: 'https://github.com/ismlhbb/react-ts-tw-starter/',
     open: 'http://react-ts-tw.ismlhbb.xyz/',
-  },
-  'BeePay Back Office': {
-    desc: 'BeePay Back Office is a dashboard application for BeePay Admins and Financial Institutions to manage and control various features of the BeePay System.',
-    techStack: 'react, typescript, redux, materialui, scss',
-    link: '',
-    open: '',
-  },
-  'BeePay Shop': {
-    desc: 'BeePay Shop is a social commerce application for BeePay Users to shop for various kinds of goods sold by BeePay Merchants.',
-    techStack: 'react, typescript, redux, materialui, scss',
-    link: '',
-    open: '',
-  },
-  'FlickSilvi Web v1': {
-    desc: 'FlickSilvi is a self service application that allows users to directly order food by simply scanning the QR code at the restaurant table.',
-    techStack: 'react, typescript, redux, materialui, scss, analytics',
-    link: '',
-    open: '',
-  },
-  'Silvi Merchant Back Office v1.1+': {
-    desc: `Silvi Merchant Back Office is a dashboard application for Silvi's Merchant to manage and control various features of the Silvi System.`,
-    techStack: 'react, typescript, mobx, tailwindcss, materialui, scss',
-    link: '',
-    open: '',
   },
   'COVID-19 Tracker': {
     desc: `A very simple Coronavirus Disease (COVID-19) realtime tracker app that visualize and track the 2020 COVID-19 pandemic around the world.`,
