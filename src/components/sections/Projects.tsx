@@ -25,7 +25,12 @@ const Projects = () => {
                       aria-label='github repo link'
                       href={project.link}
                       onClick={() =>
-                        trackEvent(`Project Link (GitHub): ${project}`, 'link')
+                        trackEvent(
+                          `Project Link (GitHub): ${
+                            Object.keys(projectData)[i]
+                          }`,
+                          'link'
+                        )
                       }
                     >
                       <ImGithub className='text-xl hover:text-green-bright text-secondary-lightest' />
@@ -36,7 +41,10 @@ const Projects = () => {
                       aria-label='live demo link'
                       href={project.open}
                       onClick={() =>
-                        trackEvent(`Project Link (Demo): ${project}`, 'link')
+                        trackEvent(
+                          `Project Link (Demo): ${Object.keys(projectData)[i]}`,
+                          'link'
+                        )
                       }
                     >
                       <MdOpenInBrowser className='text-2xl hover:text-green-bright text-secondary-lightest' />
