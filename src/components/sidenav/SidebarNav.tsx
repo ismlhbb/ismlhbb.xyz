@@ -4,6 +4,7 @@ import { IoMdMail } from 'react-icons/io';
 
 import FadeInSection from 'components/FadeInSection';
 import UnstyledLink from 'components/links/UnstyledLink';
+import { trackEvent } from 'utils/analytics';
 
 const links = [
   { href: 'intro', label: '/home' },
@@ -48,6 +49,9 @@ const SidebarNav = () => {
                 href={link.href}
                 className='sidebar-link animated-underline'
                 activeClass='sidebar-active'
+                onClick={() =>
+                  trackEvent(`Section Link: ${link.label}`, 'navigate')
+                }
               >
                 {link.label}
               </UnstyledLink>
@@ -62,6 +66,9 @@ const SidebarNav = () => {
             className='sidebar-link'
             href={social.href}
             aria-label={social.ariaLabel}
+            onClick={() =>
+              trackEvent(`Social Link: ${social.ariaLabel}`, 'link')
+            }
           >
             {social.item}
           </UnstyledLink>

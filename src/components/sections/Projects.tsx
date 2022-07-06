@@ -5,6 +5,7 @@ import FadeInSection from 'components/FadeInSection';
 import UnstyledLink from 'components/links/UnstyledLink';
 import TechIcons, { TechListType } from 'components/TechIcons';
 import { projectData } from 'constants/data';
+import { trackEvent } from 'utils/analytics';
 
 const Projects = () => {
   return (
@@ -23,6 +24,9 @@ const Projects = () => {
                     <UnstyledLink
                       aria-label='github repo link'
                       href={project.link}
+                      onClick={() =>
+                        trackEvent(`Project Link (GitHub): ${project}`, 'link')
+                      }
                     >
                       <ImGithub className='text-xl hover:text-green-bright text-secondary-lightest' />
                     </UnstyledLink>
@@ -31,6 +35,9 @@ const Projects = () => {
                     <UnstyledLink
                       aria-label='live demo link'
                       href={project.open}
+                      onClick={() =>
+                        trackEvent(`Project Link (Demo): ${project}`, 'link')
+                      }
                     >
                       <MdOpenInBrowser className='text-2xl hover:text-green-bright text-secondary-lightest' />
                     </UnstyledLink>

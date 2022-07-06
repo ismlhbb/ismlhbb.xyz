@@ -4,6 +4,7 @@ import { IoArrowDownOutline } from 'react-icons/io5';
 import FadeInSection from 'components/FadeInSection';
 import UnstyledLink from 'components/links/UnstyledLink';
 import { introData } from 'constants/data';
+import { trackEvent } from 'utils/analytics';
 
 const Introduction = () => {
   return (
@@ -23,6 +24,7 @@ const Introduction = () => {
         openNewTab={false}
         isScrollLink
         href={introData.nextSection}
+        onClick={() => trackEvent(`Intro Link: Next Section`, 'navigate')}
       >
         <IoArrowDownOutline className='intro-cta-item' />
       </UnstyledLink>
