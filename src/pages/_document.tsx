@@ -6,6 +6,9 @@ import Document, {
   NextScript,
 } from 'next/document';
 
+import { isDev } from 'constants/config';
+import { UMAMI_DOMAINS, UMAMI_SRC, UMAMI_WEBSITE_ID } from 'constants/umami';
+
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const originalRenderPage = ctx.renderPage;
@@ -28,13 +31,15 @@ class MyDocument extends Document {
     return (
       <Html lang='en' prefix='og: https://ogp.me/ns#'>
         <Head>
-          <script
-            async
-            defer
-            data-website-id='7acc253a-af37-4df8-85dd-9c235b2ef36e'
-            src='https://umami.ismlhbb.xyz/umami.js'
-            data-domains='ismlhbb.xyz'
-          ></script>
+          {!isDev && (
+            <script
+              async
+              defer
+              data-website-id={UMAMI_WEBSITE_ID}
+              src={UMAMI_SRC}
+              data-domains={UMAMI_DOMAINS}
+            ></script>
+          )}
         </Head>
         <body>
           <Main />
