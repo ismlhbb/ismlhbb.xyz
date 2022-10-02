@@ -41,7 +41,7 @@ const JobList = () => {
               <ul className='job-description'>
                 {experience.desc2.map(function (descItem, i) {
                   return (
-                    <FadeInSection key={i} delay={`${i + 1}00ms`}>
+                    <FadeInSection key={i} delay={`${(i + 1) * 5}0ms`}>
                       <li>{descItem}</li>
                     </FadeInSection>
                   );
@@ -57,7 +57,7 @@ const JobList = () => {
               <ul className='job-description'>
                 {experience.desc.map(function (descItem, i) {
                   return (
-                    <FadeInSection key={i} delay={`${i + 1}00ms`}>
+                    <FadeInSection key={i} delay={`${(i + 1) * 5}0ms`}>
                       <li>{descItem}</li>
                     </FadeInSection>
                   );

@@ -170,24 +170,24 @@ export const projectData = {
     link: 'https://github.com/ismlhbb/shovel/',
     open: '',
   },
-  'Simple Quiz App': {
-    desc: `A very simple quiz app.`,
-    techStack: 'react, css3',
-    link: 'https://github.com/ismlhbb/quizzapp',
-    open: 'https://quizz-app-ismlhbb.web.app/',
-  },
-  'Simple To-Do List App': {
-    desc: `A simple to-do list app built with React Js with Material-UI for the design and integrated with realtime database on Firebase.`,
-    techStack: 'react, materialui, css3, firebase',
-    link: 'https://github.com/ismlhbb/todolistapp/',
-    open: 'https://to-do-list-app-3d20f.web.app/',
-  },
-  'Letter Submission and Approval System Web App': {
-    desc: `A web-based letter submission and approval system for managing letter drafts created by staff to be submitted and then revised or approved by echelons.`,
-    techStack: 'php, mysql, css3, bootstrap, jquery',
-    link: 'https://github.com/ismlhbb/manajemen-konsep-surat',
-    open: '',
-  },
+  // 'Simple Quiz App': {
+  //   desc: `A very simple quiz app.`,
+  //   techStack: 'react, css3',
+  //   link: 'https://github.com/ismlhbb/quizzapp',
+  //   open: 'https://quizz-app-ismlhbb.web.app/',
+  // },
+  // 'Simple To-Do List App': {
+  //   desc: `A simple to-do list app built with React Js with Material-UI for the design and integrated with realtime database on Firebase.`,
+  //   techStack: 'react, materialui, css3, firebase',
+  //   link: 'https://github.com/ismlhbb/todolistapp/',
+  //   open: 'https://to-do-list-app-3d20f.web.app/',
+  // },
+  // 'Letter Submission and Approval System Web App': {
+  //   desc: `A web-based letter submission and approval system for managing letter drafts created by staff to be submitted and then revised or approved by echelons.`,
+  //   techStack: 'php, mysql, css3, bootstrap, jquery',
+  //   link: 'https://github.com/ismlhbb/manajemen-konsep-surat',
+  //   open: '',
+  // },
 };
 
 // Footer

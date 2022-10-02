@@ -42,7 +42,7 @@ const SidebarNav = () => {
       <div className='sidebar-items'>
         <div className='sidebar-links'>
           {links.map((link, i) => (
-            <FadeInSection key={i} delay={`${i + 1}00ms`}>
+            <FadeInSection key={i} delay={`${(i + 1) * 5}0ms`}>
               <UnstyledLink
                 openNewTab={false}
                 isScrollLink

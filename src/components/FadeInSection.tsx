@@ -35,7 +35,7 @@ const FadeInSection = ({
         'fade-in-section': disabled === false,
         'is-visible': isVisible && disabled === false,
       })}
-      style={{ transitionDelay: !disabled ? `${delay ?? ''}` : '' }}
+      style={{ transitionDelay: !disabled ? `${delay ?? '50ms'}` : '' }}
       ref={domRef}
     >
       {children}
