@@ -56,6 +56,7 @@ export const experienceItems = {
       'Create, maintain, optimize, troubleshoot, and improve web-based applications for the company, users and merchants',
       'Revamp from scratch Flash Mobile Merchant Portal Dashboard application for Merchant using React, TypeScript, Redux Toolkit, Scss',
       'Revamp from scratch Flash Mobile Merchant Portal Backoffice application for Internal Admin using React, TypeScript, Redux Toolkit, Scss',
+      'Create and maintain dashboard digital signature application for internal using React, TypeScript, Redux Toolkit, Chakra UI',
     ],
     jobTitle2: '',
     duration2: '',
