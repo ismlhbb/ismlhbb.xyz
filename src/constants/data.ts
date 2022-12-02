@@ -1,6 +1,7 @@
 import { IoLogoVercel } from 'react-icons/io5';
 import {
   SiBootstrap,
+  SiChakraui,
   SiCss3,
   SiFirebase,
   SiGit,
@@ -39,7 +40,7 @@ export const introData = {
 
 // About
 export const aboutTechStack =
-  'javascript, typescript, react, nextjs, redux, mobx, html5, css3, scss, tailwindcss, materialui, firebase, git, vscode';
+  'javascript, typescript, react, nextjs, redux, mobx, html5, css3, scss, tailwindcss, materialui, chakraui, firebase, git, vscode';
 
 export const aboutCTA = {
   text: 'View Resume',
@@ -164,12 +165,12 @@ export const projectData = {
     link: 'https://github.com/ismlhbb/covid-19-tracker/',
     open: 'https://covid-19-tracker-7ea93.web.app/',
   },
-  Shovel: {
-    desc: `An online book store management application built using Laravel 6. `,
-    techStack: 'laravel, mysql, css3, jquery',
-    link: 'https://github.com/ismlhbb/shovel/',
-    open: '',
-  },
+  // Shovel: {
+  //   desc: `An online book store management application built using Laravel 6. `,
+  //   techStack: 'laravel, mysql, css3, jquery',
+  //   link: 'https://github.com/ismlhbb/shovel/',
+  //   open: '',
+  // },
   // 'Simple Quiz App': {
   //   desc: `A very simple quiz app.`,
   //   techStack: 'react, css3',
@@ -305,5 +306,9 @@ export const techList = {
   vscode: {
     icon: SiVisualstudiocode,
     name: 'Visual Studio Code',
+  },
+  chakraui: {
+    icon: SiChakraui,
+    name: 'Chakra UI',
   },
 };
