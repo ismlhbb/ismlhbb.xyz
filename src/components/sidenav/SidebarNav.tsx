@@ -42,7 +42,7 @@ const SidebarNav = () => {
       <div className='sidebar-items'>
         <div className='sidebar-links'>
           {links.map((link, i) => (
-            <FadeInSection key={i} delay={`${(i + 1) * 5}0ms`}>
+            <FadeInSection key={i} delay={`${(i + 1) * 2}0ms`}>
               <UnstyledLink
                 openNewTab={false}
                 isScrollLink
@@ -61,17 +61,19 @@ const SidebarNav = () => {
       </div>
       <div className='sidebar-socials'>
         {socials.map((social, i) => (
-          <UnstyledLink
-            key={i}
-            className='sidebar-link'
-            href={social.href}
-            aria-label={social.ariaLabel}
-            onClick={() =>
-              trackEvent(`Social Link: ${social.ariaLabel}`, 'link')
-            }
-          >
-            {social.item}
-          </UnstyledLink>
+          <FadeInSection key={i} delay={`${(i + 1) * 2}0ms`}>
+            <UnstyledLink
+              key={i}
+              className='sidebar-link'
+              href={social.href}
+              aria-label={social.ariaLabel}
+              onClick={() =>
+                trackEvent(`Social Link: ${social.ariaLabel}`, 'link')
+              }
+            >
+              {social.item}
+            </UnstyledLink>
+          </FadeInSection>
         ))}
       </div>
     </div>

@@ -31,33 +31,39 @@ const JobList = () => {
         <Tab.Panels className='joblist-content'>
           {Object.values(experienceItems).map((experience, i) => (
             <Tab.Panel key={i}>
-              <span className='joblist-job-title'>
-                {!!experience.jobTitle2 ? experience.jobTitle2 + ' @ ' : ''}
-              </span>
-              <span className='joblist-job-company'>
-                {!!experience.jobTitle2 ? Object.keys(experienceItems)[i] : ''}
-              </span>
-              <div className='joblist-duration'>{experience.duration2}</div>
+              <FadeInSection>
+                <span className='joblist-job-title'>
+                  {!!experience.jobTitle2 ? experience.jobTitle2 + ' @ ' : ''}
+                </span>
+                <span className='joblist-job-company'>
+                  {!!experience.jobTitle2
+                    ? Object.keys(experienceItems)[i]
+                    : ''}
+                </span>
+                <div className='joblist-duration'>{experience.duration2}</div>
+              </FadeInSection>
               <ul className='job-description'>
                 {experience.desc2.map(function (descItem, i) {
                   return (
-                    <FadeInSection key={i} delay={`${(i + 1) * 5}0ms`}>
+                    <FadeInSection key={i} delay={`${(i + 1) * 2}0ms`}>
                       <li>{descItem}</li>
                     </FadeInSection>
                   );
                 })}
               </ul>
-              <span className='joblist-job-title'>
-                {experience.jobTitle + ' @ '}
-              </span>
-              <span className='joblist-job-company'>
-                {Object.keys(experienceItems)[i]}
-              </span>
-              <div className='joblist-duration'>{experience.duration}</div>
+              <FadeInSection>
+                <span className='joblist-job-title'>
+                  {experience.jobTitle + ' @ '}
+                </span>
+                <span className='joblist-job-company'>
+                  {Object.keys(experienceItems)[i]}
+                </span>
+                <div className='joblist-duration'>{experience.duration}</div>
+              </FadeInSection>
               <ul className='job-description'>
                 {experience.desc.map(function (descItem, i) {
                   return (
-                    <FadeInSection key={i} delay={`${(i + 1) * 5}0ms`}>
+                    <FadeInSection key={i} delay={`${(i + 1) * 2}0ms`}>
                       <li>{descItem}</li>
                     </FadeInSection>
                   );

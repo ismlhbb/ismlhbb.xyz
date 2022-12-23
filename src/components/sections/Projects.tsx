@@ -15,7 +15,7 @@ const Projects = () => {
       </div>
       <div className='projects-grid'>
         {Object.values(projectData).map((project, i) => (
-          <FadeInSection key={i} delay={`${(i + 1) * 5}0ms`}>
+          <FadeInSection key={i} delay={`${(i + 1) * 2}0ms`}>
             <div className='projects-card'>
               <div className='card-header'>
                 <MdFolderOpen className='text-4xl text-green-bright' />
