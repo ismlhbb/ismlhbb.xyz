@@ -20,9 +20,7 @@ const FadeInSection = ({
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         //  add this to make this run only once
-        if (entry.isIntersecting) {
-          setVisible(entry.isIntersecting);
-        }
+        if (entry.isIntersecting) setVisible(entry.isIntersecting);
       });
     });
     observer.observe(current);
@@ -35,7 +33,7 @@ const FadeInSection = ({
         'fade-in-section': disabled === false,
         'is-visible': isVisible && disabled === false,
       })}
-      style={{ transitionDelay: !disabled ? `${delay ?? ''}` : '' }}
+      style={{ transitionDelay: !disabled ? `${delay ?? '20ms'}` : '' }}
       ref={domRef}
     >
       {children}

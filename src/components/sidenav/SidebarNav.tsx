@@ -4,6 +4,7 @@ import { IoMdMail } from 'react-icons/io';
 
 import FadeInSection from 'components/FadeInSection';
 import UnstyledLink from 'components/links/UnstyledLink';
+import { trackEvent } from 'utils/analytics';
 
 const links = [
   { href: 'intro', label: '/home' },
@@ -41,13 +42,16 @@ const SidebarNav = () => {
       <div className='sidebar-items'>
         <div className='sidebar-links'>
           {links.map((link, i) => (
-            <FadeInSection key={i} delay={`${i + 1}00ms`}>
+            <FadeInSection key={i} delay={`${(i + 1) * 2}0ms`}>
               <UnstyledLink
                 openNewTab={false}
                 isScrollLink
                 href={link.href}
                 className='sidebar-link animated-underline'
                 activeClass='sidebar-active'
+                onClick={() =>
+                  trackEvent(`Section Link: ${link.label}`, 'navigate')
+                }
               >
                 {link.label}
               </UnstyledLink>
@@ -57,14 +61,19 @@ const SidebarNav = () => {
       </div>
       <div className='sidebar-socials'>
         {socials.map((social, i) => (
-          <UnstyledLink
-            key={i}
-            className='sidebar-link'
-            href={social.href}
-            aria-label={social.ariaLabel}
-          >
-            {social.item}
-          </UnstyledLink>
+          <FadeInSection key={i} delay={`${(i + 1) * 2}0ms`}>
+            <UnstyledLink
+              key={i}
+              className='sidebar-link'
+              href={social.href}
+              aria-label={social.ariaLabel}
+              onClick={() =>
+                trackEvent(`Social Link: ${social.ariaLabel}`, 'link')
+              }
+            >
+              {social.item}
+            </UnstyledLink>
+          </FadeInSection>
         ))}
       </div>
     </div>

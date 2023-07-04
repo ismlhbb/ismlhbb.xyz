@@ -54,10 +54,9 @@ export const experienceItems = {
     duration: 'NOV 2021 - Present',
     desc: [
       'Create, maintain, optimize, troubleshoot, and improve web-based applications for the company, users and merchants',
-      'Revamp Merchant Portal FrontOffice application for Merchant using React, TypeScript, Redux Toolkit, Scss',
-      'Revamp Merchant Portal BackOffice application for Internal Admin using React, TypeScript, Redux Toolkit, Scss',
-      'Create and maintain Dashboard DocSign application for internal using React, TypeScript, Redux Toolkit, Chakra UI',
-      'Design slicing of BaaS (Bank as a Service) Portal Backoffice and Portal Merchant using Laravel, Bootstrap',
+      'Revamp from scratch Flash Mobile Merchant Portal Dashboard application for Merchant using React, TypeScript, Redux Toolkit, Scss',
+      'Revamp from scratch Flash Mobile Merchant Portal Backoffice application for Internal Admin using React, TypeScript, Redux Toolkit, Scss',
+      'Create and maintain dashboard digital signature application for internal using React, TypeScript, Redux Toolkit, Chakra UI',
     ],
     jobTitle2: '',
     duration2: '',
@@ -173,30 +172,30 @@ export const projectData = {
     link: 'https://github.com/ismlhbb/covid-19-tracker/',
     open: 'https://covid-19-tracker-7ea93.web.app/',
   },
-  Shovel: {
-    desc: `An online book store management application built using Laravel 6. `,
-    techStack: 'laravel, mysql, css3, jquery',
-    link: 'https://github.com/ismlhbb/shovel/',
-    open: '',
-  },
-  'Simple Quiz App': {
-    desc: `A very simple quiz app.`,
-    techStack: 'react, css3',
-    link: 'https://github.com/ismlhbb/quizzapp',
-    open: 'https://quizz-app-ismlhbb.web.app/',
-  },
-  'Simple To-Do List App': {
-    desc: `A simple to-do list app built with React Js with Material-UI for the design and integrated with realtime database on Firebase.`,
-    techStack: 'react, materialui, css3, firebase',
-    link: 'https://github.com/ismlhbb/todolistapp/',
-    open: 'https://to-do-list-app-3d20f.web.app/',
-  },
-  'Letter Submission and Approval System Web App': {
-    desc: `A web-based letter submission and approval system for managing letter drafts created by staff to be submitted and then revised or approved by echelons.`,
-    techStack: 'php, mysql, css3, bootstrap, jquery',
-    link: 'https://github.com/ismlhbb/manajemen-konsep-surat',
-    open: '',
-  },
+  // Shovel: {
+  //   desc: `An online book store management application built using Laravel 6. `,
+  //   techStack: 'laravel, mysql, css3, jquery',
+  //   link: 'https://github.com/ismlhbb/shovel/',
+  //   open: '',
+  // },
+  // 'Simple Quiz App': {
+  //   desc: `A very simple quiz app.`,
+  //   techStack: 'react, css3',
+  //   link: 'https://github.com/ismlhbb/quizzapp',
+  //   open: 'https://quizz-app-ismlhbb.web.app/',
+  // },
+  // 'Simple To-Do List App': {
+  //   desc: `A simple to-do list app built with React Js with Material-UI for the design and integrated with realtime database on Firebase.`,
+  //   techStack: 'react, materialui, css3, firebase',
+  //   link: 'https://github.com/ismlhbb/todolistapp/',
+  //   open: 'https://to-do-list-app-3d20f.web.app/',
+  // },
+  // 'Letter Submission and Approval System Web App': {
+  //   desc: `A web-based letter submission and approval system for managing letter drafts created by staff to be submitted and then revised or approved by echelons.`,
+  //   techStack: 'php, mysql, css3, bootstrap, jquery',
+  //   link: 'https://github.com/ismlhbb/manajemen-konsep-surat',
+  //   open: '',
+  // },
 };
 
 // Footer

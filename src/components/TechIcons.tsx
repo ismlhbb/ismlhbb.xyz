@@ -29,7 +29,10 @@ export default function TechIcons({
 
         return (
           <Tooltip key={current.name} content={<p>{current.name}</p>}>
-            <FadeInSection delay={`${i + 1}00ms`} disabled={!fadeInSection}>
+            <FadeInSection
+              delay={`${(i + 1) * 2}0ms`}
+              disabled={!fadeInSection}
+            >
               <div
                 className={clsx(
                   iconClassName,

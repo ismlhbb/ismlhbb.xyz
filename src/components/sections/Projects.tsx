@@ -5,6 +5,7 @@ import FadeInSection from 'components/FadeInSection';
 import UnstyledLink from 'components/links/UnstyledLink';
 import TechIcons, { TechListType } from 'components/TechIcons';
 import { projectData } from 'constants/data';
+import { trackEvent } from 'utils/analytics';
 
 const Projects = () => {
   return (
@@ -14,7 +15,7 @@ const Projects = () => {
       </div>
       <div className='projects-grid'>
         {Object.values(projectData).map((project, i) => (
-          <FadeInSection key={i} delay={`${i + 1}00ms`}>
+          <FadeInSection key={i} delay={`${(i + 1) * 2}0ms`}>
             <div className='projects-card'>
               <div className='card-header'>
                 <MdFolderOpen className='text-4xl text-green-bright' />
@@ -23,6 +24,14 @@ const Projects = () => {
                     <UnstyledLink
                       aria-label='github repo link'
                       href={project.link}
+                      onClick={() =>
+                        trackEvent(
+                          `Project Link (GitHub): ${
+                            Object.keys(projectData)[i]
+                          }`,
+                          'link'
+                        )
+                      }
                     >
                       <ImGithub className='text-xl hover:text-green-bright text-secondary-lightest' />
                     </UnstyledLink>
@@ -31,6 +40,12 @@ const Projects = () => {
                     <UnstyledLink
                       aria-label='live demo link'
                       href={project.open}
+                      onClick={() =>
+                        trackEvent(
+                          `Project Link (Demo): ${Object.keys(projectData)[i]}`,
+                          'link'
+                        )
+                      }
                     >
                       <MdOpenInBrowser className='text-2xl hover:text-green-bright text-secondary-lightest' />
                     </UnstyledLink>

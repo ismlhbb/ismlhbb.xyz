@@ -5,6 +5,7 @@ import ButtonLink from 'components/links/ButtonLink';
 import NextImage from 'components/NextImage';
 import TechIcons, { TechListType } from 'components/TechIcons';
 import { aboutCTA, aboutTechStack } from 'constants/data';
+import { trackEvent } from 'utils/analytics';
 
 const DescItems = [
   {
@@ -66,7 +67,12 @@ const About = () => {
             imgClassName='about-image'
           />
         </div>
-        <ButtonLink href={aboutCTA.url}>{aboutCTA.text}</ButtonLink>
+        <ButtonLink
+          href={aboutCTA.url}
+          onClick={() => trackEvent('About Link: Resume', 'link')}
+        >
+          {aboutCTA.text}
+        </ButtonLink>
       </FadeInSection>
     </div>
   );
