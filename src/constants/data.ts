@@ -1,6 +1,7 @@
 import { IoLogoVercel } from 'react-icons/io5';
 import {
   SiBootstrap,
+  SiChakraui,
   SiCss3,
   SiFirebase,
   SiGit,
@@ -39,7 +40,7 @@ export const introData = {
 
 // About
 export const aboutTechStack =
-  'javascript, typescript, react, nextjs, redux, mobx, html5, css3, scss, tailwindcss, materialui, firebase, git, vscode';
+  'javascript, typescript, react, nextjs, redux, mobx, html5, css3, scss, tailwindcss, materialui, chakraui, firebase, git, vscode';
 
 export const aboutCTA = {
   text: 'View Resume',
@@ -53,8 +54,10 @@ export const experienceItems = {
     duration: 'NOV 2021 - Present',
     desc: [
       'Create, maintain, optimize, troubleshoot, and improve web-based applications for the company, users and merchants',
-      'Revamp from scratch Flash Mobile Merchant Portal Dashboard application for Merchant using React, TypeScript, Redux Toolkit, Scss',
-      'Revamp from scratch Flash Mobile Merchant Portal Backoffice application for Internal Admin using React, TypeScript, Redux Toolkit, Scss',
+      'Revamp Merchant Portal FrontOffice application for Merchant using React, TypeScript, Redux Toolkit, Scss',
+      'Revamp Merchant Portal BackOffice application for Internal Admin using React, TypeScript, Redux Toolkit, Scss',
+      'Create and maintain Dashboard DocSign application for internal using React, TypeScript, Redux Toolkit, Chakra UI',
+      'Design slicing of BaaS (Bank as a Service) Portal Backoffice and Portal Merchant using Laravel, Bootstrap',
     ],
     jobTitle2: '',
     duration2: '',
@@ -98,13 +101,19 @@ export const experienceItems = {
 
 // Projects
 export const projectData = {
-  'Merchant Portal Dashboard': {
+  DocSign: {
+    desc: `A dashboard web application that serves as an internal platform for digitally signing documents.`,
+    techStack: 'react, typescript, redux, chakraui',
+    link: '',
+    open: '',
+  },
+  'Merchant Portal FrontOffice': {
     desc: `A dashboard web application to provide Flash Mobile Merchants to register, manage, control and utilize products and services of Flash Mobile.`,
     techStack: 'react, typescript, redux, scss',
     link: '',
     open: '',
   },
-  'Merchant Portal Backoffice': {
+  'Merchant Portal BackOffice': {
     desc: `A dashboard web application to provide Flash Mobile internal admins and other staff to manage and control various configurations, products and features of the Flash Mobile System.`,
     techStack: 'react, typescript, redux, scss',
     link: '',
@@ -305,5 +314,9 @@ export const techList = {
   vscode: {
     icon: SiVisualstudiocode,
     name: 'Visual Studio Code',
+  },
+  chakraui: {
+    icon: SiChakraui,
+    name: 'Chakra UI',
   },
 };
