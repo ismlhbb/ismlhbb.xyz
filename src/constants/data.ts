@@ -54,6 +54,9 @@ export const experienceItems = {
     duration: 'NOV 2021 - Present',
     desc: [
       'Create, maintain, optimize, troubleshoot, and improve web-based applications for the company, users and merchants',
+      'Handle ±13 services in Merchant Portal Front/Back-Office: Auth, Admin Management, Merchant Management, User Management, SMS, QRIS, Virtual Account, Biller, Transfer, FlashEvent, FlashCheckout, E-Wallet, KYC',
+      'Revamp Merchant Portal FrontOffice v3 using React, Golang, TypeScript, Zustand, Chakra UI',
+      'Revamp Merchant Portal BackOffice v3 using React, Golang, TypeScript, Zustand, Chakra UI',
       'Revamp Merchant Portal FrontOffice application for Merchant using React, TypeScript, Redux Toolkit, Scss',
       'Revamp Merchant Portal BackOffice application for Internal Admin using React, TypeScript, Redux Toolkit, Scss',
       'Create and maintain Dashboard DocSign application for internal using React, TypeScript, Redux Toolkit, Chakra UI',
