@@ -1,13 +1,9 @@
 import Document, {
   DocumentContext,
-  Head,
   Html,
   Main,
   NextScript,
 } from 'next/document';
-
-import { isDev } from 'constants/config';
-import { UMAMI_DOMAINS, UMAMI_SRC, UMAMI_WEBSITE_ID } from 'constants/umami';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -30,17 +26,6 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang='en' prefix='og: https://ogp.me/ns#'>
-        <Head>
-          {!isDev && (
-            <script
-              async
-              defer
-              data-website-id={UMAMI_WEBSITE_ID}
-              src={UMAMI_SRC}
-              data-domains={UMAMI_DOMAINS}
-            ></script>
-          )}
-        </Head>
         <body>
           <Main />
           <NextScript />
