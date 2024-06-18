@@ -1,5 +1,6 @@
 import Document, {
   DocumentContext,
+  Head,
   Html,
   Main,
   NextScript,
@@ -26,6 +27,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang='en' prefix='og: https://ogp.me/ns#'>
+        <Head />
         <body>
           <Main />
           <NextScript />
