@@ -490,10 +490,10 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
-"@types/umami@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@types/umami/-/umami-0.1.0.tgz#bf76780c8b60183f35a910db34228627d410a655"
-  integrity sha512-nsrcnBdKXTP/koCwL3c+ywQG0lk+uqNo74oIe0FHC109aO4vZoXL0eSQqkUdWa9Hwc3ssFgJINBBCe0MZVYUwg==
+"@types/umami@^2.10.0":
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/@types/umami/-/umami-2.10.0.tgz#0897ada5ea5b4c22fce2ff3fa2ccf9e1aef15083"
+  integrity sha512-iWcs1KkcO3ooIi2rR9M5drmpQzlsT+sFiyWElIGmVwjdGlp+vQmy/VYIChYnF5ETqx7KrL80JfSkroS6dm37Hg==
 
 "@typescript-eslint/eslint-plugin@^5.3.0":
   version "5.8.1"
