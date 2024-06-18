@@ -50,7 +50,9 @@ const SidebarNav = () => {
                 className='sidebar-link animated-underline'
                 activeClass='sidebar-active'
                 onClick={() =>
-                  trackEvent(`Section Link: ${link.label}`, 'navigate')
+                  trackEvent(`Section Link: ${link.label}`, {
+                    type: 'navigate',
+                  })
                 }
               >
                 {link.label}
@@ -68,7 +70,7 @@ const SidebarNav = () => {
               href={social.href}
               aria-label={social.ariaLabel}
               onClick={() =>
-                trackEvent(`Social Link: ${social.ariaLabel}`, 'link')
+                trackEvent(`Social Link: ${social.ariaLabel}`, { type: 'link' })
               }
             >
               {social.item}

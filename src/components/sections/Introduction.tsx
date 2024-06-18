@@ -24,7 +24,9 @@ const Introduction = () => {
         openNewTab={false}
         isScrollLink
         href={introData.nextSection}
-        onClick={() => trackEvent(`Intro Link: Next Section`, 'navigate')}
+        onClick={() =>
+          trackEvent(`Intro Link: Next Section`, { type: 'navigate' })
+        }
       >
         <IoArrowDownOutline className='intro-cta-item' />
       </UnstyledLink>

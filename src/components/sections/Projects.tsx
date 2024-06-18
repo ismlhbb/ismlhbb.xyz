@@ -29,7 +29,7 @@ const Projects = () => {
                           `Project Link (GitHub): ${
                             Object.keys(projectData)[i]
                           }`,
-                          'link'
+                          { type: 'link' }
                         )
                       }
                     >
@@ -43,7 +43,7 @@ const Projects = () => {
                       onClick={() =>
                         trackEvent(
                           `Project Link (Demo): ${Object.keys(projectData)[i]}`,
-                          'link'
+                          { type: 'link' }
                         )
                       }
                     >

@@ -69,7 +69,7 @@ const About = () => {
         </div>
         <ButtonLink
           href={aboutCTA.url}
-          onClick={() => trackEvent('About Link: Resume', 'link')}
+          onClick={() => trackEvent('About Link: Resume', { type: 'link' })}
         >
           {aboutCTA.text}
         </ButtonLink>
