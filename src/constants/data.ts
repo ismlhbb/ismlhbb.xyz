@@ -1,33 +1,45 @@
 import { IoLogoVercel } from 'react-icons/io5';
 import {
+  SiArgo,
   SiBootstrap,
   SiChakraui,
   SiCss3,
+  SiDocker,
   SiFirebase,
   SiGit,
   SiGoogleanalytics,
   SiHtml5,
   SiJavascript,
+  SiJenkins,
   SiJest,
   SiJquery,
   SiLaravel,
   SiMarkdown,
-  SiMaterialui,
   SiMobx,
   SiMongodb,
+  SiMui,
   SiMysql,
   SiNextdotjs,
   SiNodedotjs,
   SiNotion,
+  SiNx,
   SiPhp,
   SiPrettier,
   SiReact,
+  SiReacthookform,
+  SiReactquery,
+  SiReacttable,
   SiRedux,
   SiSass,
+  SiStyledcomponents,
   SiTailwindcss,
   SiTypescript,
+  SiUmami,
+  SiVerdaccio,
   SiVisualstudiocode,
   SiVite,
+  SiVitest,
+  SiZod,
 } from 'react-icons/si';
 
 // Intro
@@ -41,7 +53,7 @@ export const introData = {
 
 // About
 export const aboutTechStack =
-  'javascript, typescript, react, nextjs, redux, mobx, html5, css3, scss, tailwindcss, materialui, chakraui, firebase, git, vscode';
+  'javascript, typescript, react, nextjs, nx, vite, redux, mobx, html5, css3, scss, tailwindcss, materialui, styledComponents, chakraui, vitest, jest, reactQuery, reactTable, reactHookForm, zod, umami, firebase, git, vscode, verdaccio, docker, jenkins, argo';
 
 export const aboutCTA = {
   text: 'View Resume',
@@ -50,6 +62,25 @@ export const aboutCTA = {
 
 // Experience
 export const experienceItems = {
+  'Blue Bird Group': {
+    jobTitle: 'Frontend Developer',
+    duration: 'JUN 2024 - PRESENT',
+    desc: [
+      'Contributing to the company UI Library (KitBird) by creating or enhancing reusable components that solve common frontend team challenges',
+      'Contributing to the company Webservice application by creating a tools, UI and API that solve common frontend team challenges',
+      'Create and custom Umami as Internal Analytic application that can be used as an alternative Google Analytic and can be used for all tech team that related',
+      'Develop and create reusable micro app modules that can be shared across micro-frontend applications using nx dan vite',
+      'Implement authentication for each application with RBAC KeyCloak to maintain application security from cyber attacks',
+      'Implement unit testing for each application using jest or vitest with an average coverage above 80%',
+      'Assist in the development of web frontend applications from several squads and work closely with related stakeholders such as backend and QA',
+      'Actively participating in code reviews to both receive and provide constructive feedback',
+      'Developing and documenting a comprehensive documentation for each tools dan apps that built',
+      'Contributing to the sharing sessions event within the frontend team on relevant technical topics',
+    ],
+    jobTitle2: '',
+    duration2: '',
+    desc2: [] as string[],
+  },
   'Flash Mobile': {
     jobTitle: 'Frontend Developer',
     duration: 'NOV 2021 - MAY 2024',
@@ -291,7 +322,7 @@ export const techList = {
     name: 'CSS3',
   },
   materialui: {
-    icon: SiMaterialui,
+    icon: SiMui,
     name: 'Material UI',
   },
   bootstrap: {
@@ -325,5 +356,53 @@ export const techList = {
   jest: {
     icon: SiJest,
     name: 'Jest',
+  },
+  vitest: {
+    icon: SiVitest,
+    name: 'Vitest',
+  },
+  nx: {
+    icon: SiNx,
+    name: 'Nx',
+  },
+  verdaccio: {
+    icon: SiVerdaccio,
+    name: 'Verdaccio',
+  },
+  styledComponents: {
+    icon: SiStyledcomponents,
+    name: 'Styled Components',
+  },
+  docker: {
+    icon: SiDocker,
+    name: 'Docker',
+  },
+  jenkins: {
+    icon: SiJenkins,
+    name: 'Jenkins',
+  },
+  argo: {
+    icon: SiArgo,
+    name: 'Argo',
+  },
+  umami: {
+    icon: SiUmami,
+    name: 'Umami',
+  },
+  reactQuery: {
+    icon: SiReactquery,
+    name: 'React Query',
+  },
+  reactTable: {
+    icon: SiReacttable,
+    name: 'React Table',
+  },
+  reactHookForm: {
+    icon: SiReacthookform,
+    name: 'React Hook Form',
+  },
+  zod: {
+    icon: SiZod,
+    name: 'Zod',
   },
 };
