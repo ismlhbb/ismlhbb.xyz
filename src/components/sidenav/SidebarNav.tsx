@@ -16,7 +16,7 @@ const links = [
 const socials = [
   {
     ariaLabel: 'link to send email',
-    href: 'mailto:contact.ismailhabibi@gmail.com',
+    href: 'mailto:me@ismlhbb.xyz',
     item: <IoMdMail style={{ fontSize: 21 }} />,
   },
   {
@@ -28,11 +28,6 @@ const socials = [
     ariaLabel: 'link to linkedin account',
     href: 'https://www.linkedin.com/in/ismailhabibi',
     item: <ImLinkedin style={{ fontSize: 21 }} />,
-  },
-  {
-    ariaLabel: 'link to twitter account',
-    href: 'https://www.twitter.com/ismlhbb',
-    item: <ImTwitter style={{ fontSize: 21 }} />,
   },
 ];
 
