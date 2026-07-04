@@ -10,29 +10,26 @@ import { trackEvent } from 'utils/analytics';
 const Projects = () => {
   return (
     <div id='projects'>
-      <div className='section-header '>
+      <div className='section-header'>
         <span className='section-title'>/ software-creations</span>
       </div>
       <div className='projects-grid'>
-        {Object.values(projectData)
-          .filter((project) => project.active)
-          .map((project, i) => (
-            <FadeInSection key={i} delay={`${(i + 1) * 2}0ms`}>
+        {Object.entries(projectData)
+          .filter(([, project]) => project.active)
+          .map(([projectTitle, project], i) => (
+            <FadeInSection key={projectTitle} delay={`${(i + 1) * 2}0ms`}>
               <div className='projects-card'>
                 <div className='card-header'>
                   <MdFolderOpen className='text-4xl text-green-bright' />
                   <span className='external-links'>
-                    {project.open && (
+                    {project.link && (
                       <UnstyledLink
                         aria-label='github repo link'
                         href={project.link}
                         onClick={() =>
-                          trackEvent(
-                            `Project Link (GitHub): ${
-                              Object.keys(projectData)[i]
-                            }`,
-                            { type: 'link' }
-                          )
+                          trackEvent(`Project Link (GitHub): ${project.link}`, {
+                            type: 'link',
+                          })
                         }
                       >
                         <ImGithub className='text-xl hover:text-green-bright text-secondary-lightest' />
@@ -43,12 +40,9 @@ const Projects = () => {
                         aria-label='live demo link'
                         href={project.open}
                         onClick={() =>
-                          trackEvent(
-                            `Project Link (Demo): ${
-                              Object.keys(projectData)[i]
-                            }`,
-                            { type: 'link' }
-                          )
+                          trackEvent(`Project Link (Demo): ${project.open}`, {
+                            type: 'link',
+                          })
                         }
                       >
                         <MdOpenInBrowser className='text-2xl hover:text-green-bright text-secondary-lightest' />
@@ -56,7 +50,7 @@ const Projects = () => {
                     )}
                   </span>
                 </div>
-                <div className='card-title'>{Object.keys(projectData)[i]}</div>
+                <div className='card-title'>{projectTitle}</div>
                 <div className='card-desc'>{project.desc}</div>
                 <div className='card-tech'>
                   <TechIcons
