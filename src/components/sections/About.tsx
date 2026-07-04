@@ -61,8 +61,8 @@ const About = () => {
             useSkeleton
             className='about-image-wrapper'
             alt='Ismail Habibi Herman'
-            height={249}
-            width={200}
+            width={188.44}
+            height={280.88}
             src='/images/me.jpg'
             imgClassName='about-image'
           />
